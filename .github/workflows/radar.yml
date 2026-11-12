@@ -32,7 +32,7 @@ jobs:
         continue-on-error: true
         uses: google-github-actions/auth@v2
         with:
-          workload_identity_provider: 'projects/830417487369/locations/global/workloadIdentityPools/github-actions/providers/github-actions'
+          workload_identity_provider: 'projects/830417487369/locations/global/workloadIdentityPools/github-actions/providers/-github-actions'
           service_account: 'go4jobs-radar@go4jobs-marketing-radar.iam.gserviceaccount.com'
           create_credentials_file: true
       - name: Controleer Search Console-zichtbaarheid (geen ruwe zoekopdrachten publiceren)
