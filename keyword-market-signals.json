@@ -1,44 +1,137 @@
 {
-  "source": "Google Ads Keyword Planner - Vlaamse zoekmarkt (handmatige export)",
+  "source": "Google Ads Keyword Planner - Vlaams zoekwoordenonderzoek (upload 12 november 2026)",
   "period": "2025-11-01/2026-10-31",
   "region": "Vlaanderen, België",
   "language": "Nederlands",
   "network": "Google",
   "exported_on": "2026-11-12",
-  "method": "Per thema één representatieve, daadwerkelijk aanwezige zoekterm uit de export; volumes van synoniemen niet optellen. Alleen voorbeelden met minimaal 100 gemiddeld maandelijkse zoekopdrachten.",
-  "status": "eerste steekproef; geen volledig marktonderzoek",
+  "export_keyword_count": 2450,
+  "method": "Handmatig inhoudelijk gecontroleerde thematische selectie uit de volledige CSV. Per thema één representatieve daadwerkelijk geëxporteerde zoekopdracht; synoniemen worden niet opgeteld. Niet elke radarupdate heeft een passend zoekwoord. Geen individuele of accountgebonden advertentiegegevens.",
+  "status": "Uitgebreide pilot: 31 clusters; nog geen algemeen zoekvolume voor onderwerpen buiten de export.",
   "topics": {
     "flexi-jobs": {
       "keyword": "flexi job",
       "avg_monthly_searches": 49500
     },
-    "interimwerk": {
+    "flexi-regels": {
+      "keyword": "voorwaarde flexijob",
+      "avg_monthly_searches": 1000
+    },
+    "flexi-gepensioneerden": {
+      "keyword": "flexi jobs gepensioneerden",
+      "avg_monthly_searches": 1900
+    },
+    "flexi-weekend": {
+      "keyword": "flexijob weekend",
+      "avg_monthly_searches": 1900
+    },
+    "flexi-werkgever": {
+      "keyword": "kosten flexijob werkgever",
+      "avg_monthly_searches": 40
+    },
+    "flexi-sectoren": {
+      "keyword": "flexijob sectoren",
+      "avg_monthly_searches": 210
+    },
+    "flexi-chauffeur": {
+      "keyword": "flexijob chauffeur b",
+      "avg_monthly_searches": 1900
+    },
+    "flexi-administratie": {
+      "keyword": "flexijob administratie",
+      "avg_monthly_searches": 880
+    },
+    "flexi-zorg": {
+      "keyword": "flexijob in de zorg",
+      "avg_monthly_searches": 720
+    },
+    "interimkantoren": {
       "keyword": "interimkantoren",
       "avg_monthly_searches": 5400
+    },
+    "interim-jobs": {
+      "keyword": "interim jobs",
+      "avg_monthly_searches": 2400
+    },
+    "interim-optie-vast": {
+      "keyword": "interim met optie vast",
+      "avg_monthly_searches": 10
     },
     "solliciteren": {
       "keyword": "solliciteren",
       "avg_monthly_searches": 2400
     },
-    "cv": {
+    "sollicitatietraining": {
+      "keyword": "sollicitatietraining",
+      "avg_monthly_searches": 40
+    },
+    "sollicitatiegesprek": {
+      "keyword": "sollicitatievragen",
+      "avg_monthly_searches": 90
+    },
+    "sollicitatiebrief": {
+      "keyword": "sollicitatie brief",
+      "avg_monthly_searches": 1300
+    },
+    "cv-maken": {
       "keyword": "cv maken",
       "avg_monthly_searches": 8100
+    },
+    "cv-voorbeeld": {
+      "keyword": "cv voorbeeld",
+      "avg_monthly_searches": 5400
     },
     "heftruck": {
       "keyword": "heftruckchauffeur",
       "avg_monthly_searches": 1000
     },
-    "magazijn en logistiek": {
+    "magazijnier": {
       "keyword": "magazijnier",
       "avg_monthly_searches": 880
     },
-    "productie": {
+    "logistieke-jobs": {
+      "keyword": "logistiek medewerker vacature",
+      "avg_monthly_searches": 480
+    },
+    "productiejobs": {
       "keyword": "productiemedewerker",
       "avg_monthly_searches": 880
+    },
+    "operator": {
+      "keyword": "vacature operator",
+      "avg_monthly_searches": 480
+    },
+    "ploegenwerk": {
+      "keyword": "werken in ploegen",
+      "avg_monthly_searches": 20
     },
     "studentenjobs": {
       "keyword": "studentenjob vacature",
       "avg_monthly_searches": 1000
+    },
+    "personeel-zoeken": {
+      "keyword": "personeel gezocht",
+      "avg_monthly_searches": 110
+    },
+    "schoonmaakjobs": {
+      "keyword": "vacature schoonmaak",
+      "avg_monthly_searches": 2900
+    },
+    "winkeljobs": {
+      "keyword": "vacature winkelmedewerker",
+      "avg_monthly_searches": 1300
+    },
+    "thuiswerkjobs": {
+      "keyword": "thuiswerken vacature",
+      "avg_monthly_searches": 2400
+    },
+    "werk-zonder-opleiding": {
+      "keyword": "vacature zonder opleiding",
+      "avg_monthly_searches": 10
+    },
+    "vacature-schrijven": {
+      "keyword": "vacature maken sjabloon",
+      "avg_monthly_searches": 10
     }
   }
 }
