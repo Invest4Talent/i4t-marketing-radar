@@ -236,11 +236,9 @@ if(item.content_score && Number.isFinite(Number(item.content_score.score))){
  {
   const google=item.market_interest, detail=make('div','gsc-row');
   detail.appendChild(make('span','gsc-chip ai','AI · '+c.score+'/100'));
-  detail.appendChild(make('span','gsc-chip'+(google?'':' unavailable'),google?'Google · '+google.score+'/100':'Google · geen marktdata'));
   if(google){
+   detail.appendChild(make('span','gsc-chip','Google · '+google.score+'/100'));
    detail.appendChild(make('span','gsc-context','Thema: '+google.theme+' · Contentkans: 75% AI / 25% Google. Google: '+google.basis+'. Referentiezoekwoord "'+google.keyword+'": ca. '+Number(google.avg_monthly_searches).toLocaleString('nl-BE')+' zoekopdrachten/maand in Vlaanderen (nov. 2025 – okt. 2026).'));
-  }else{
-   detail.appendChild(make('span','gsc-context','Voor dit onderwerp bevat de gecontroleerde Keyword Planner-selectie nog geen vergelijkbare zoekvraag. Contentkans is hier 100% AI.'));
   }
   scoreRow.appendChild(detail);
  }
