@@ -12,14 +12,14 @@ ROOT = Path(__file__).resolve().parents[1]
 MARKET_FILE = ROOT / "keyword-market-signals.json"
 
 THEME_PATTERNS = {
-    "flexi-jobs": r"\\bflexi[ -]?jobs?\\b|\\bflexijob",
-    "interimwerk": r"\\binterim\\b|\\buitzend",
-    "solliciteren": r"\\bsollicit",
-    "cv": r"\\bcv\\b|\\bcurriculum vitae\\b",
-    "heftruck": r"\\bheftruck|\\breachtruck",
-    "magazijn en logistiek": r"\\bmagazijn|\\blogistiek|\\borderpick",
-    "productie": r"\\bproductie|\\boperator\\b",
-    "studentenjobs": r"\\bstudentenjob|\\bjobstudent|\\bstudentenarbeid",
+    "flexi-jobs": r"\bflexi[ -]?jobs?\b|\bflexijob",
+    "interimwerk": r"\binterim\b|\buitzend",
+    "solliciteren": r"\bsollicit",
+    "cv": r"\bcv\b|\bcurriculum vitae\b",
+    "heftruck": r"\bheftruck|\breachtruck",
+    "magazijn en logistiek": r"\bmagazijn|\blogistiek|\borderpick",
+    "productie": r"\bproductie|\boperator\b",
+    "studentenjobs": r"\bstudentenjob|\bjobstudent|\bstudentenarbeid",
 }
 PATTERNS = {key: re.compile(pattern, re.I) for key, pattern in THEME_PATTERNS.items()}
 AI_WEIGHT = 0.80
