@@ -15,6 +15,7 @@ from pathlib import Path
 import requests
 from content_score import enrich_scores
 from market_opportunity import load_market_signals, enrich_opportunities
+from gsc_opportunity import load_signals as load_gsc_signals
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'radar-data.json'
@@ -391,7 +392,8 @@ def main():
     # De gecombineerde score gebruikt marktbreed Keyword Planner-volume, nooit GSC-vertoningen.
     # Thema's zonder betrouwbare export-match behouden de bestaande AI-score.
     market_signals = load_market_signals()
-    enrich_opportunities(live + base.get('items', []) + base.get('alerts', []), market_signals)
+    enrich_opportunities(live + base.get('items', []) + base.get('alerts', []),
+                         market_signals, load_gsc_signals())
     # Na AI-scoring opnieuw de globale limiet van 30 controleren.
     live = retain_news(live, base)
     # Maximaal 180 dagen historie, zodat de JSON niet onbeperkt groeit.
