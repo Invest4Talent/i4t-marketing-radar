@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T13:49:20Z",
+  "updated_at": "2026-11-12T13:56:41Z",
   "update_mode": "automatische bronontdekking (niet inhoudelijk geverifieerd)",
   "sources_ok": 5,
   "baseline": {
@@ -66,7 +66,13 @@
           "platform": "linkedin",
           "platformreden": "De Federgon-cijfers bieden een concrete marktinsteek voor werkgevers; nodig lokale kmo’s uit om hun personeelsnoden te bespreken."
         },
-        "content_score_version": 2
+        "content_score_version": 2,
+        "combined_score": 82,
+        "search_visibility": {
+          "theme": "interimwerk",
+          "score": 100,
+          "interpretation": "relatieve organische zichtbaarheid op go4jobs.be; geen totaal zoekvolume"
+        }
       }
     ],
     "alerts": [
@@ -143,7 +149,13 @@
           "platform": "blog",
           "platformreden": "Een genuanceerde aanvulling past bij de bestaande, blijvende uitleg over de stap van interim naar vast werk."
         },
-        "content_score_version": 2
+        "content_score_version": 2,
+        "combined_score": 75,
+        "search_visibility": {
+          "theme": "interimwerk",
+          "score": 100,
+          "interpretation": "relatieve organische zichtbaarheid op go4jobs.be; geen totaal zoekvolume"
+        }
       }
     ]
   },
@@ -350,6 +362,12 @@
         "basis": "geanalyseerde brontekst",
         "platform": "linkedin",
         "platformreden": "Een post over inclusieve matching en voorbereiding van recruiters sluit aan bij lokale werkgevers en HR."
+      },
+      "combined_score": 65,
+      "search_visibility": {
+        "theme": "solliciteren",
+        "score": 67,
+        "interpretation": "relatieve organische zichtbaarheid op go4jobs.be; geen totaal zoekvolume"
       }
     },
     {
@@ -384,6 +402,12 @@
         "basis": "geanalyseerde brontekst",
         "platform": "linkedin",
         "platformreden": "De nationale markttrend is relevant voor werkgevers; deel ze met de kanttekening dat regionale en klantgegevens ontbreken."
+      },
+      "combined_score": 84,
+      "search_visibility": {
+        "theme": "interimwerk",
+        "score": 100,
+        "interpretation": "relatieve organische zichtbaarheid op go4jobs.be; geen totaal zoekvolume"
       }
     },
     {
@@ -724,6 +748,12 @@
         "basis": "geanalyseerde brontekst",
         "platform": "linkedin",
         "platformreden": "De industriële marktindicator kan werkgeversgesprekken ondersteunen, mits de post duidelijk maakt dat de index geen vacaturetrend aantoont."
+      },
+      "combined_score": 61,
+      "search_visibility": {
+        "theme": "productie",
+        "score": 71,
+        "interpretation": "relatieve organische zichtbaarheid op go4jobs.be; geen totaal zoekvolume"
       }
     },
     {
@@ -758,6 +788,12 @@
         "basis": "geanalyseerde brontekst",
         "platform": "linkedin",
         "platformreden": "LinkedIn past bij een beknopt marktinzicht voor werkgevers; benoem dat de cijfers voorlopig zijn en koppel ze aan een vraag over personeelsbehoeften."
+      },
+      "combined_score": 69,
+      "search_visibility": {
+        "theme": "productie",
+        "score": 71,
+        "interpretation": "relatieve organische zichtbaarheid op go4jobs.be; geen totaal zoekvolume"
       }
     },
     {
