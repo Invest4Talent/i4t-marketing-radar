@@ -99,7 +99,7 @@ function visibleItems(items){
  // Een globale limiet voor alle nieuwsbronnen, zowel live als startartikels.
  const news=items.filter(item=>item.category!=='blog'&&articleVisible(item));
  const alerts=items.filter(item=>item.category==='blog'&&articleVisible(item));
- news.sort((a,b)=>(Number(b.sort||0)-Number(a.sort||0))||(Number(b.content_score?.score??-1)-Number(a.content_score?.score??-1)));
+ news.sort((a,b)=>(Number(b.sort||0)-Number(a.sort||0))||(Number(b.combined_score??b.content_score?.score??-1)-Number(a.combined_score??a.content_score?.score??-1)));
  return [...news.slice(0,30),...alerts];
 }
 
@@ -125,10 +125,11 @@ function buildCard(item){const isHandled=!!handledArticles[item.id];const card=m
  }
  let right=make('span','date',item.date);top.appendChild(right);card.appendChild(top);if(item.category==='blog'){card.appendChild(make('span','status '+item.level,item.state));}card.appendChild(make('h3','',item.title));
 if(item.content_score && Number.isFinite(Number(item.content_score.score))){
- const c=item.content_score, points=Number(c.score);
+ const c=item.content_score, points=Number.isFinite(Number(item.combined_score))?Number(item.combined_score):Number(c.score);
  const scoreRow=make('div','content-score');
  const rating=points>=75?'high':points<40?'low':'';
  scoreRow.appendChild(make('span','score-chip '+rating,'Contentkans · '+points+'/100'));
+ if(item.search_visibility){const gsc=item.search_visibility;scoreRow.appendChild(make('span','score-limited','AI '+c.score+'/100 · GSC-zichtbaarheid '+gsc.score+'/100 · '+gsc.theme+' (65/35; geen totaal zoekvolume)'));}
  scoreRow.appendChild(make('span','score-detail',c.motivatie||''));
  if(c.basis==='alleen kop')scoreRow.appendChild(make('span','score-limited','Voorlopig · alleen op basis van de kop'));
  card.appendChild(scoreRow);
@@ -187,7 +188,7 @@ for(const f of formats){
  button.onclick=()=>openBriefing(item,f.key);
  actions.appendChild(button);
 }let handledButton=make('button',isHandled?'handled-btn done':'handled-btn',isHandled?'✓ Behandeld':'Markeer als behandeld');handledButton.type='button';handledButton.setAttribute('aria-pressed',String(isHandled));handledButton.setAttribute('aria-label',isHandled?'Markeer artikel opnieuw als open':'Markeer artikel als behandeld');handledButton.onclick=()=>markHandled(item,!isHandled);actions.appendChild(handledButton);let link=make('a','source-link','Bekijk bron ↗');link.href=item.article_url||item.url;link.target='_blank';link.rel='noopener noreferrer';actions.appendChild(link);if(item.sourceurl){const second=make('a','source-link','Aanvullende bron ↗');second.href=item.sourceurl;second.target='_blank';second.rel='noopener noreferrer';actions.appendChild(second)}card.appendChild(actions);return card}
-function render(){cards.replaceChildren();const q=search.value.toLocaleLowerCase('nl-BE').trim();const display=all.filter(item=>(tab==='all'||item.category===tab)&&(!hideHandled.checked||!handledArticles[item.id])&&([item.title,item.summary,item.impact,item.source,item.topic,item.kind].join(' ').toLocaleLowerCase('nl-BE').includes(q))).sort((a,b)=>sortOrder.value==='score'?(Number(b.content_score?.score??-1)-Number(a.content_score?.score??-1))||(Number(b.sort||0)-Number(a.sort||0)):(Number(b.sort||0)-Number(a.sort||0))||(Number(b.content_score?.score??-1)-Number(a.content_score?.score??-1)));display.forEach(x=>cards.appendChild(buildCard(x)));document.getElementById('countline').textContent=display.length+' signalen · '+all.filter(item=>handledArticles[item.id]).length+' behandeld';document.getElementById('empty').style.display=display.length?'none':'block';let cfg={all:['Alle relevante signalen','Sectorupdates, concurrentiecontent en blogbewaking in één overzicht.'],sector:['Sectorontwikkelingen','Geverifieerde nieuwsfeiten en een redactionele interpretatie voor Go4Jobs.'],concurrent:['Wat brengen andere spelers?','Concurrentieartikels als inspiratie, niet om over te nemen.'],blog:['Blogbewaking','Signalen voor inhoudelijke actualisatie, controle of verrijking.']}[tab];document.getElementById('section-title').textContent=cfg[0];document.getElementById('section-subtitle').textContent=cfg[1]}
+function render(){cards.replaceChildren();const q=search.value.toLocaleLowerCase('nl-BE').trim();const display=all.filter(item=>(tab==='all'||item.category===tab)&&(!hideHandled.checked||!handledArticles[item.id])&&([item.title,item.summary,item.impact,item.source,item.topic,item.kind].join(' ').toLocaleLowerCase('nl-BE').includes(q))).sort((a,b)=>sortOrder.value==='score'?(Number(b.combined_score??b.content_score?.score??-1)-Number(a.combined_score??a.content_score?.score??-1))||(Number(b.sort||0)-Number(a.sort||0)):(Number(b.sort||0)-Number(a.sort||0))||(Number(b.combined_score??b.content_score?.score??-1)-Number(a.combined_score??a.content_score?.score??-1)));display.forEach(x=>cards.appendChild(buildCard(x)));document.getElementById('countline').textContent=display.length+' signalen · '+all.filter(item=>handledArticles[item.id]).length+' behandeld';document.getElementById('empty').style.display=display.length?'none':'block';let cfg={all:['Alle relevante signalen','Sectorupdates, concurrentiecontent en blogbewaking in één overzicht.'],sector:['Sectorontwikkelingen','Geverifieerde nieuwsfeiten en een redactionele interpretatie voor Go4Jobs.'],concurrent:['Wat brengen andere spelers?','Concurrentieartikels als inspiratie, niet om over te nemen.'],blog:['Blogbewaking','Signalen voor inhoudelijke actualisatie, controle of verrijking.']}[tab];document.getElementById('section-title').textContent=cfg[0];document.getElementById('section-subtitle').textContent=cfg[1]}
 document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>{tab=b.dataset.tab;document.querySelectorAll('[data-tab]').forEach(t=>t.setAttribute('aria-selected',String(t===b)));render()}));search.addEventListener('input',render);sortOrder.addEventListener('change',render);hideHandled.addEventListener('change',render);
 function buildPrompt(item){
  const isUpdate=item.category==='blog';
