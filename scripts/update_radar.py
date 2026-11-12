@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 import requests
 from content_score import enrich_scores
-from gsc_opportunity import load_signals, enrich_opportunities
+from market_opportunity import load_market_signals, enrich_opportunities
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'radar-data.json'
@@ -388,10 +388,10 @@ def main():
     baseline_items = base.get('items', []) + base.get('alerts', [])
     old_baseline_items = old_baseline.get('items', []) + old_baseline.get('alerts', [])
     enrich_scores(baseline_items, old_baseline_items, api_key, AI_MODEL, remaining)
-    # Voeg alleen bij herkenbaar titelthema bestaande GSC-zichtbaarheid toe.
-    # Ontbrekende of mislukte GSC-metingen laten de redactionele AI-score intact.
-    topics = load_signals()
-    enrich_opportunities(live + base.get('items', []) + base.get('alerts', []), topics)
+    # De gecombineerde score gebruikt marktbreed Keyword Planner-volume, nooit GSC-vertoningen.
+    # Thema's zonder betrouwbare export-match behouden de bestaande AI-score.
+    market_signals = load_market_signals()
+    enrich_opportunities(live + base.get('items', []) + base.get('alerts', []), market_signals)
     # Na AI-scoring opnieuw de globale limiet van 30 controleren.
     live = retain_news(live, base)
     # Maximaal 180 dagen historie, zodat de JSON niet onbeperkt groeit.
