@@ -11,17 +11,47 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MARKET_FILE = ROOT / "keyword-market-signals.json"
 
+# Alleen duidelijke overeenkomsten tussen zoekintentie en artikelonderwerp.
 THEME_PATTERNS = {
     "flexi-jobs": r"\bflexi[ -]?jobs?\b|\bflexijob",
-    "interimwerk": r"\binterim\b|\buitzend",
+    "flexi-regels": r"\bflexi[ -]?job.{0,35}(?:voorwaard|regel|wetgev)",
+    "flexi-gepensioneerden": r"(?:flexi[ -]?job.{0,35}gepensioneerd|gepensioneerd.{0,35}flexi)",
+    "flexi-weekend": r"flexi[ -]?job.{0,35}weekend",
+    "flexi-sectoren": r"flexi[ -]?job.{0,35}sector",
+    "flexi-chauffeur": r"flexi[ -]?job.{0,35}chauffeur",
+    "flexi-administratie": r"flexi[ -]?job.{0,35}administrat",
+    "flexi-zorg": r"flexi[ -]?job.{0,35}zorg",
+    "interimkantoren": r"\binterimkantoor|\buitzendkantoor|\binterimbureau",
+    "interim-jobs": r"\binterim\b|\buitzend",
     "solliciteren": r"\bsollicit",
-    "cv": r"\bcv\b|\bcurriculum vitae\b",
+    "sollicitatiebrief": r"\bsollicitatiebrief|\bmotivatiebrief",
+    "cv-maken": r"\bcv maken|\bcurriculum vitae opstellen",
+    "cv-voorbeeld": r"\bcv voorbeeld|\bvoorbeeld cv",
     "heftruck": r"\bheftruck|\breachtruck",
-    "magazijn en logistiek": r"\bmagazijn|\blogistiek|\borderpick",
-    "productie": r"\bproductie|\boperator\b",
-    "studentenjobs": r"\bstudentenjob|\bjobstudent|\bstudentenarbeid",
+    "magazijnier": r"\bmagazijnier|\bmagazijnmedewerker",
+    "logistieke-jobs": r"\blogistieke? (?:job|medewerker|vacatur)|\bjob.{0,12}logistiek",
+    "productiejobs": r"\bproductie|\bproductiemedewerk",
+    "operator": r"\boperator\b|\bprocesoperator",
+    "studentenjobs": r"\bstudentenjob|\bjobstudent",
+    "winkeljobs": r"\bwinkelmedewerker|\bwinkelbediende",
+    "schoonmaakjobs": r"\bschoonmaakvacatur|\bvacatur.{0,15}schoonmaak",
+    "thuiswerkjobs": r"\bthuiswerkvacatur|\bvacatur.{0,15}thuiswerk",
+    "personeel-zoeken": r"\bpersoneel (?:gezocht|zoeken)|\b(?:zoek|zoeken) personeel",
 }
 PATTERNS = {key: re.compile(pattern, re.I) for key, pattern in THEME_PATTERNS.items()}
+GSC_THEME = {
+    "flexi-jobs": "flexi-jobs", "flexi-regels": "flexi-jobs",
+    "flexi-gepensioneerden": "flexi-jobs", "flexi-weekend": "flexi-jobs",
+    "flexi-sectoren": "flexi-jobs", "flexi-chauffeur": "flexi-jobs",
+    "flexi-administratie": "flexi-jobs", "flexi-zorg": "flexi-jobs",
+    "interimkantoren": "interimwerk", "interim-jobs": "interimwerk",
+    "solliciteren": "solliciteren", "sollicitatiebrief": "solliciteren",
+    "cv-maken": "cv", "cv-voorbeeld": "cv",
+    "heftruck": "heftruck", "magazijnier": "magazijn en logistiek",
+    "logistieke-jobs": "magazijn en logistiek",
+    "productiejobs": "productie", "operator": "productie",
+    "studentenjobs": "studentenjobs",
+}
 AI_WEIGHT = 0.75
 GOOGLE_WEIGHT = 0.25
 MARKET_WITHIN_GOOGLE = 0.90
@@ -78,6 +108,8 @@ def enrich_opportunities(items, market_signals, search_console_signals=None):
         if not isinstance(score, dict) or not isinstance(score.get("score"), (int, float)):
             continue
         title = str(item.get("title", ""))
+        if item.get("category") == "blog":
+            title += " " + str(item.get("topic", ""))
         matches = [(topic, market_signals[topic]) for topic, pattern in PATTERNS.items()
                    if topic in market_signals and pattern.search(title)]
         if not matches:
@@ -85,7 +117,7 @@ def enrich_opportunities(items, market_signals, search_console_signals=None):
         # Bij meerdere thema's gebruiken we de sterkste gemeten match; niet optellen.
         topic, measure = max(matches, key=lambda match: match[1]["volume"])
         ai = max(0, min(100, int(score["score"])))
-        gsc = search_console_signals.get(topic)
+        gsc = search_console_signals.get(GSC_THEME.get(topic))
         # Eigen GSC-zichtbaarheid weegt slechts beperkt mee in de Google-score.
         google_score = (round(MARKET_WITHIN_GOOGLE * measure["score"] +
                               GSC_WITHIN_GOOGLE * gsc) if isinstance(gsc, (int, float))
