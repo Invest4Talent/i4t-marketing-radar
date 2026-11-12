@@ -22,8 +22,10 @@ THEME_PATTERNS = {
     "studentenjobs": r"\bstudentenjob|\bjobstudent|\bstudentenarbeid",
 }
 PATTERNS = {key: re.compile(pattern, re.I) for key, pattern in THEME_PATTERNS.items()}
-AI_WEIGHT = 0.80
-MARKET_WEIGHT = 0.20
+AI_WEIGHT = 0.75
+GOOGLE_WEIGHT = 0.25
+MARKET_WITHIN_GOOGLE = 0.90
+GSC_WITHIN_GOOGLE = 0.10
 MIN_VOLUME = 100
 # In het eerste experiment is 'flexi job' de hoogste werkelijke steekproefwaarde.
 # Lognormalisatie beperkt de dominantie van één heel grote zoekterm.
@@ -63,9 +65,10 @@ def load_market_signals():
         return {}
 
 
-def enrich_opportunities(items, market_signals):
+def enrich_opportunities(items, market_signals, search_console_signals=None):
     """Gebruik alleen een expliciete titelmatch; zonder match blijft de AI-score bestaan."""
     found = 0
+    search_console_signals = search_console_signals or {}
     for item in items:
         # Vorige GSC-gecombineerde scores en afgeleide data vervangen.
         item.pop("combined_score", None)
@@ -82,17 +85,24 @@ def enrich_opportunities(items, market_signals):
         # Bij meerdere thema's gebruiken we de sterkste gemeten match; niet optellen.
         topic, measure = max(matches, key=lambda match: match[1]["volume"])
         ai = max(0, min(100, int(score["score"])))
-        combined = round(AI_WEIGHT * ai + MARKET_WEIGHT * measure["score"])
+        gsc = search_console_signals.get(topic)
+        # Eigen GSC-zichtbaarheid weegt slechts beperkt mee in de Google-score.
+        google_score = (round(MARKET_WITHIN_GOOGLE * measure["score"] +
+                              GSC_WITHIN_GOOGLE * gsc) if isinstance(gsc, (int, float))
+                        else measure["score"])
+        combined = round(AI_WEIGHT * ai + GOOGLE_WEIGHT * google_score)
         if score.get("basis") == "alleen kop":
             combined = min(45, combined)
         item["combined_score"] = combined
         item["market_interest"] = {
             "theme": topic,
-            "score": measure["score"],
+            "score": google_score,
             "avg_monthly_searches": measure["volume"],
             "keyword": measure["keyword"],
             "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
-            "basis": "Keyword Planner-marktschatting; geen Go4Jobs-vertoningen",
+            "basis": ("90% Keyword Planner / 10% Search Console" if isinstance(gsc, (int, float))
+                      else "100% Keyword Planner"),
+            "market_score": measure["score"],
         }
         found += 1
     print("Marktbrede Google-score:", found, "artikels met een onderbouwde titelmatch.")
