@@ -1,0 +1,44 @@
+{
+  "source": "Google Ads Keyword Planner - Vlaamse zoekmarkt (handmatige export)",
+  "period": "2025-11-01/2026-10-31",
+  "region": "Vlaanderen, België",
+  "language": "Nederlands",
+  "network": "Google",
+  "exported_on": "2026-11-12",
+  "method": "Per thema één representatieve, daadwerkelijk aanwezige zoekterm uit de export; volumes van synoniemen niet optellen. Alleen voorbeelden met minimaal 100 gemiddeld maandelijkse zoekopdrachten.",
+  "status": "eerste steekproef; geen volledig marktonderzoek",
+  "topics": {
+    "flexi-jobs": {
+      "keyword": "flexi job",
+      "avg_monthly_searches": 49500
+    },
+    "interimwerk": {
+      "keyword": "interimkantoren",
+      "avg_monthly_searches": 5400
+    },
+    "solliciteren": {
+      "keyword": "solliciteren",
+      "avg_monthly_searches": 2400
+    },
+    "cv": {
+      "keyword": "cv maken",
+      "avg_monthly_searches": 8100
+    },
+    "heftruck": {
+      "keyword": "heftruckchauffeur",
+      "avg_monthly_searches": 1000
+    },
+    "magazijn en logistiek": {
+      "keyword": "magazijnier",
+      "avg_monthly_searches": 880
+    },
+    "productie": {
+      "keyword": "productiemedewerker",
+      "avg_monthly_searches": 880
+    },
+    "studentenjobs": {
+      "keyword": "studentenjob vacature",
+      "avg_monthly_searches": 1000
+    }
+  }
+}
