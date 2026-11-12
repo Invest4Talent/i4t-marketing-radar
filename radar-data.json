@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T14:15:26Z",
+  "updated_at": "2026-11-12T14:42:44Z",
   "update_mode": "automatische bronontdekking (niet inhoudelijk geverifieerd)",
   "sources_ok": 5,
   "baseline": {
@@ -67,11 +67,15 @@
           "platformreden": "De Federgon-cijfers bieden een concrete marktinsteek voor werkgevers; nodig lokale kmo’s uit om hun personeelsnoden te bespreken."
         },
         "content_score_version": 2,
-        "combined_score": 82,
-        "search_visibility": {
+        "combined_score": 72,
+        "market_interest": {
           "theme": "interimwerk",
-          "score": 100,
-          "interpretation": "relatieve organische zichtbaarheid op go4jobs.be; geen totaal zoekvolume"
+          "score": 74,
+          "avg_monthly_searches": 5400,
+          "keyword": "interimkantoren",
+          "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
+          "basis": "90% Keyword Planner / 10% Search Console",
+          "market_score": 71
         }
       }
     ],
@@ -150,11 +154,15 @@
           "platformreden": "Een genuanceerde aanvulling past bij de bestaande, blijvende uitleg over de stap van interim naar vast werk."
         },
         "content_score_version": 2,
-        "combined_score": 75,
-        "search_visibility": {
+        "combined_score": 65,
+        "market_interest": {
           "theme": "interimwerk",
-          "score": 100,
-          "interpretation": "relatieve organische zichtbaarheid op go4jobs.be; geen totaal zoekvolume"
+          "score": 74,
+          "avg_monthly_searches": 5400,
+          "keyword": "interimkantoren",
+          "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
+          "basis": "90% Keyword Planner / 10% Search Console",
+          "market_score": 71
         }
       }
     ]
@@ -363,11 +371,15 @@
         "platform": "linkedin",
         "platformreden": "Een post over inclusieve matching en voorbereiding van recruiters sluit aan bij lokale werkgevers en HR."
       },
-      "combined_score": 65,
-      "search_visibility": {
+      "combined_score": 64,
+      "market_interest": {
         "theme": "solliciteren",
-        "score": 67,
-        "interpretation": "relatieve organische zichtbaarheid op go4jobs.be; geen totaal zoekvolume"
+        "score": 62,
+        "avg_monthly_searches": 2400,
+        "keyword": "solliciteren",
+        "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
+        "basis": "90% Keyword Planner / 10% Search Console",
+        "market_score": 61
       }
     },
     {
@@ -403,11 +415,15 @@
         "platform": "linkedin",
         "platformreden": "De nationale markttrend is relevant voor werkgevers; deel ze met de kanttekening dat regionale en klantgegevens ontbreken."
       },
-      "combined_score": 84,
-      "search_visibility": {
+      "combined_score": 76,
+      "market_interest": {
         "theme": "interimwerk",
-        "score": 100,
-        "interpretation": "relatieve organische zichtbaarheid op go4jobs.be; geen totaal zoekvolume"
+        "score": 74,
+        "avg_monthly_searches": 5400,
+        "keyword": "interimkantoren",
+        "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
+        "basis": "90% Keyword Planner / 10% Search Console",
+        "market_score": 71
       }
     },
     {
@@ -749,11 +765,15 @@
         "platform": "linkedin",
         "platformreden": "De industriële marktindicator kan werkgeversgesprekken ondersteunen, mits de post duidelijk maakt dat de index geen vacaturetrend aantoont."
       },
-      "combined_score": 61,
-      "search_visibility": {
+      "combined_score": 54,
+      "market_interest": {
         "theme": "productie",
-        "score": 71,
-        "interpretation": "relatieve organische zichtbaarheid op go4jobs.be; geen totaal zoekvolume"
+        "score": 50,
+        "avg_monthly_searches": 880,
+        "keyword": "productiemedewerker",
+        "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
+        "basis": "90% Keyword Planner / 10% Search Console",
+        "market_score": 48
       }
     },
     {
@@ -789,11 +809,15 @@
         "platform": "linkedin",
         "platformreden": "LinkedIn past bij een beknopt marktinzicht voor werkgevers; benoem dat de cijfers voorlopig zijn en koppel ze aan een vraag over personeelsbehoeften."
       },
-      "combined_score": 69,
-      "search_visibility": {
+      "combined_score": 64,
+      "market_interest": {
         "theme": "productie",
-        "score": 71,
-        "interpretation": "relatieve organische zichtbaarheid op go4jobs.be; geen totaal zoekvolume"
+        "score": 50,
+        "avg_monthly_searches": 880,
+        "keyword": "productiemedewerker",
+        "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
+        "basis": "90% Keyword Planner / 10% Search Console",
+        "market_score": 48
       }
     },
     {
