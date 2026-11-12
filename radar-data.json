@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T14:42:44Z",
+  "updated_at": "2026-11-12T15:12:40Z",
   "update_mode": "automatische bronontdekking (niet inhoudelijk geverifieerd)",
   "sources_ok": 5,
   "baseline": {
@@ -67,15 +67,15 @@
           "platformreden": "De Federgon-cijfers bieden een concrete marktinsteek voor werkgevers; nodig lokale kmo’s uit om hun personeelsnoden te bespreken."
         },
         "content_score_version": 2,
-        "combined_score": 72,
+        "combined_score": 70,
         "market_interest": {
-          "theme": "interimwerk",
-          "score": 74,
-          "avg_monthly_searches": 5400,
-          "keyword": "interimkantoren",
+          "theme": "interim-jobs",
+          "score": 65,
+          "avg_monthly_searches": 2400,
+          "keyword": "interim jobs",
           "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
           "basis": "90% Keyword Planner / 10% Search Console",
-          "market_score": 71
+          "market_score": 61
         }
       }
     ],
@@ -103,7 +103,17 @@
           "platform": "blog",
           "platformreden": "Een actuele, genuanceerde uitleg beantwoordt blijvende zoekvragen van jongeren en werkgevers over studentenarbeid."
         },
-        "content_score_version": 2
+        "content_score_version": 2,
+        "combined_score": 76,
+        "market_interest": {
+          "theme": "studentenjobs",
+          "score": 54,
+          "avg_monthly_searches": 1000,
+          "keyword": "studentenjob vacature",
+          "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
+          "basis": "90% Keyword Planner / 10% Search Console",
+          "market_score": 50
+        }
       },
       {
         "id": "alert-flexi",
@@ -154,15 +164,15 @@
           "platformreden": "Een genuanceerde aanvulling past bij de bestaande, blijvende uitleg over de stap van interim naar vast werk."
         },
         "content_score_version": 2,
-        "combined_score": 65,
+        "combined_score": 63,
         "market_interest": {
-          "theme": "interimwerk",
-          "score": 74,
-          "avg_monthly_searches": 5400,
-          "keyword": "interimkantoren",
+          "theme": "interim-jobs",
+          "score": 65,
+          "avg_monthly_searches": 2400,
+          "keyword": "interim jobs",
           "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
           "basis": "90% Keyword Planner / 10% Search Console",
-          "market_score": 71
+          "market_score": 61
         }
       }
     ]
@@ -415,15 +425,15 @@
         "platform": "linkedin",
         "platformreden": "De nationale markttrend is relevant voor werkgevers; deel ze met de kanttekening dat regionale en klantgegevens ontbreken."
       },
-      "combined_score": 76,
+      "combined_score": 73,
       "market_interest": {
-        "theme": "interimwerk",
-        "score": 74,
-        "avg_monthly_searches": 5400,
-        "keyword": "interimkantoren",
+        "theme": "interim-jobs",
+        "score": 65,
+        "avg_monthly_searches": 2400,
+        "keyword": "interim jobs",
         "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
         "basis": "90% Keyword Planner / 10% Search Console",
-        "market_score": 71
+        "market_score": 61
       }
     },
     {
@@ -767,7 +777,7 @@
       },
       "combined_score": 54,
       "market_interest": {
-        "theme": "productie",
+        "theme": "productiejobs",
         "score": 50,
         "avg_monthly_searches": 880,
         "keyword": "productiemedewerker",
@@ -811,7 +821,7 @@
       },
       "combined_score": 64,
       "market_interest": {
-        "theme": "productie",
+        "theme": "productiejobs",
         "score": 50,
         "avg_monthly_searches": 880,
         "keyword": "productiemedewerker",
