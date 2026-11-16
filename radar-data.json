@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T13:56:51Z",
+  "updated_at": "2026-11-16T15:48:40Z",
   "update_mode": "automatische bronontdekking (niet inhoudelijk geverifieerd)",
   "sources_ok": 5,
   "baseline": {
@@ -709,40 +709,6 @@
       }
     },
     {
-      "id": "live-sector-ee996d5fb2972",
-      "category": "sector",
-      "kind": "Arbeidsmarkt",
-      "date": "13/10/2026",
-      "sort": 20261013,
-      "source": "VDAB",
-      "title": "Arbeidsmarkflits West-Vlaanderen",
-      "summary": "Nieuw artikel gevonden bij VDAB. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
-      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPby0tMFlrOG80N0FmWU4tbmRiYi11dDVJV3VfOFk0enNTZm9GUEJ6S3owOFpzcG1pVlF3c2gybTJyZ0VGRWRwUlktaFZ0TXpLSWsyd00xLXg0TEItZDhyd2tLS0gxajJvalpNNFl0REh1T25kUFBHcktHQUtoUXBQeFZPR0pjc1l6ZEFWRVphWGpQdw?oc=5",
-      "topic": "Arbeidsmarkflits West-Vlaanderen",
-      "audience": "kandidaten en werkgevers",
-      "priority": "Te beoordelen",
-      "verification": "Automatisch gevonden · inhoud nog nakijken",
-      "first_seen": "2026-11-09T10:23:11Z",
-      "ai_analysis": {
-        "samenvatting": "Eind september 2026 telde West-Vlaanderen 35.346 werkzoekenden zonder werk, 0,7% minder dan een jaar eerder; het aantal gemelde vacatures daalde met 12,2%. Toch blijft de zoektocht naar personeel moeilijk voor structurele knelpuntberoepen.",
-        "betekenis": "Hoewel de arbeidsmarkt ontspant, heeft 54,1% van de werkzoekenden zonder werk volgens VDAB een grote afstand tot de arbeidsmarkt. De blijvende knelpuntberoepen wijzen op een mogelijke rol voor gerichte bemiddeling.",
-        "marketingactie": "Benader West-Vlaamse werkgevers met structurele knelpuntvacatures voor een intake over hun aanwervingsnoden en mogelijke kandidatenbemiddeling.",
-        "kanttekening": "Het artikel benoemt geen specifieke knelpuntberoepen of werkgevers; controleer lokale vacaturegegevens vóór gerichte communicatie."
-      },
-      "article_url": "https://www.vdab.be/nieuws-voor-de-pers/west-vlaanderen/arbeidsmarkflits-west-vlaanderen",
-      "ai_version": 2,
-      "ai_status": "geanalyseerd",
-      "content_score_version": 2,
-      "content_score": {
-        "score": 82,
-        "motivatie": "Sterk relevant voor West-Vlaamse werkgevers en kandidaten: minder vacatures, maar blijvende knelpuntberoepen en grote afstand tot werk bieden een concrete invalshoek rond matching.",
-        "basis": "geanalyseerde brontekst",
-        "platform": "linkedin",
-        "platformreden": "De regionale cijfers en aanwervingsuitdagingen bieden een relevante marktinzichtenpost voor West-Vlaamse werkgevers en HR."
-      }
-    },
-    {
       "id": "live-sector-d2595e6f2e2f3",
       "category": "sector",
       "kind": "Werk & economie",
@@ -1085,6 +1051,24 @@
       "verification": "Automatisch gevonden · inhoud nog nakijken",
       "first_seen": "2026-11-15T13:56:51Z",
       "ai_status": "niet ingesteld"
+    },
+    {
+      "id": "live-sector-88b4c5aefb365",
+      "category": "sector",
+      "kind": "Werk & economie",
+      "date": "12/11/2026",
+      "sort": 20261112,
+      "source": "Statbel",
+      "title": "Totale productie in de marktgeoriënteerde sectoren - Statbel",
+      "summary": "Nieuw artikel gevonden bij Statbel. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
+      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMXc1VF9pNzFKMTFrc3dsamNhQncyV2t4TjJVV3haNVNwdU1LVE9ZTTJZenRuRGlCQWtpVHJsb3BqRHZKTjFBRl9rQUdBVzI4Z05uLWk4bDZOYWdsOG1jTFFlTm9DbEVLZWpmQzR3TUlqU2Y3TnppRUF6R1JHUkhGX3Z0dWxpYU1WcXdqZndNRTFRa0x5UjZIc0lhTzh0YTdlQlloR1VNcHBVSC1tVEZ4M3VNQjA?oc=5",
+      "topic": "Totale productie in de marktgeoriënteerde sectoren - Statbel",
+      "audience": "werkgevers en kandidaten",
+      "priority": "Te beoordelen",
+      "verification": "Automatisch gevonden · inhoud nog nakijken",
+      "first_seen": "2026-11-09T10:23:11Z",
+      "ai_status": "niet ingesteld"
     }
   ],
   "first_seen_ids": {
@@ -1120,7 +1104,7 @@
     "live-concurrent-24db91d59835c": "2026-11-13T14:36:37Z",
     "live-sector-e8a12cec4ddc5": "2026-11-15T13:56:51Z"
   },
-  "new_count": 1,
+  "new_count": 0,
   "content_score_backfill_ran": false,
   "platform_backfill_ran": false
 }
