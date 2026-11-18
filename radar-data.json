@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-17T16:00:31Z",
+  "updated_at": "2026-11-18T15:40:54Z",
   "update_mode": "automatische bronontdekking (niet inhoudelijk geverifieerd)",
-  "sources_ok": 4,
+  "sources_ok": 3,
   "baseline": {
     "items": [
       {
@@ -641,40 +641,6 @@
       }
     },
     {
-      "id": "live-sector-bda1fbcf9e7f3",
-      "category": "sector",
-      "kind": "Arbeidsmarkt",
-      "date": "15/10/2026",
-      "sort": 20261015,
-      "source": "VDAB",
-      "title": "Jobdate bouw en detentie bij VDAB Hamme: bouwen aan kansen",
-      "summary": "Nieuw artikel gevonden bij VDAB. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
-      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOVpSeTJ4VWx3YU9DaUNFT2pXaFdYRFVpVm52bEI3U25VWThsamNrUk9ZOWwxM2xXLXNHN21lbFNqMENOUmlzZ2RSal9RVlU1UnVvYlB1VDZ6dlBORlg1RkNNRHFZS0o1enFuRGRWWkVBWnZ0OXN6bklNWC1aYWkyaFdDOWUza1lUaGkzZ2wxcGxlNmtiR1AyZ3lzbUNYOTVzLWs5SFVaQk9JcVpzQmVTclJNQQ?oc=5",
-      "topic": "Jobdate bouw en detentie bij VDAB Hamme: bouwen aan kansen",
-      "audience": "kandidaten en werkgevers",
-      "priority": "Te beoordelen",
-      "verification": "Automatisch gevonden · inhoud nog nakijken",
-      "first_seen": "2026-11-09T10:23:11Z",
-      "ai_analysis": {
-        "samenvatting": "VDAB en de Kansenfabriek organiseerden in Hamme een jobdate voor bouw- en houtbedrijven, met kandidaten uit detentie en andere werkzoekenden. Zestig werkzoekenden spraken met werkgevers van zo’n 10 regionale bedrijven.",
-        "betekenis": "De jobdate bracht werkgevers en kandidaten rechtstreeks samen en kon deelnemers met een opleidingsnood meteen doorverwijzen naar het aanbod van VDAB Hamme. Dat biedt een concreet voorbeeld van laagdrempelige matching voor lokale werkgevers.",
-        "marketingactie": "Deel op LinkedIn een korte case over de jobdate en nodig lokale kmo-klanten uit om met Go4Jobs te bespreken of een gelijkaardige ontmoetingsdag past bij hun vacatures.",
-        "kanttekening": "Controleer het jaar van de jobdate en of Go4Jobs in de betrokken regio en sectoren partners kan inzetten voor zo’n ontmoetingsdag."
-      },
-      "article_url": "https://www.vdab.be/nieuws-voor-de-pers/oost-vlaanderen/jobdate-bouw-en-detentie-bij-vdab-hamme-bouwen-aan-kansen",
-      "ai_version": 2,
-      "ai_status": "geanalyseerd",
-      "content_score_version": 2,
-      "content_score": {
-        "score": 76,
-        "motivatie": "Sterke match met lokale kmo’s en werkgevers die moeilijk kandidaten vinden. De concrete jobdate biedt een bruikbare case rond directe matching en opleiding, maar de actualiteit is ",
-        "basis": "geanalyseerde brontekst",
-        "platform": "linkedin",
-        "platformreden": "Een concrete lokale werkgeverscase kan HR en kmo’s aanspreken; bevestig eerst het jaar en de regionale mogelijkheden van Go4Jobs."
-      }
-    },
-    {
       "id": "live-sector-d2595e6f2e2f3",
       "category": "sector",
       "kind": "Werk & economie",
@@ -1037,6 +1003,24 @@
       "verification": "Automatisch gevonden · inhoud nog nakijken",
       "first_seen": "2026-11-17T12:00:14Z",
       "ai_status": "niet ingesteld"
+    },
+    {
+      "id": "live-sector-12bacf779ab70",
+      "category": "sector",
+      "kind": "Arbeidsmarkt",
+      "date": "17/11/2026",
+      "sort": 20261117,
+      "source": "VDAB",
+      "title": "Acht enthousiaste werkzoekenden kiezen voor het bartenderberoep in Antwerpen",
+      "summary": "Nieuw artikel gevonden bij VDAB. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
+      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZENRTUp2MkJRbHdHR2w4NlBHUDFSRWROVXJqOWstUTVRaXZYX21tanVDNUlSWEs5ZkRva0plNkZSeWhLd0pacm9JVmlxM2JHQVV1Y19WYnYyVEc4d01HLVpnSEtmdXdjbDZKR29VRmxGa1V6SGpaaWhhYkwyQ3dOLUxNc1lPVlFxSTdvcGx4MFJkQlBnVnBwejRSVGVWMmxrdDI5aVpabDZpaXBnNERRbk4zTQ?oc=5",
+      "topic": "Acht enthousiaste werkzoekenden kiezen voor het bartenderberoep in Antwerpen",
+      "audience": "kandidaten en werkgevers",
+      "priority": "Te beoordelen",
+      "verification": "Automatisch gevonden · inhoud nog nakijken",
+      "first_seen": "2026-11-18T15:40:54Z",
+      "ai_status": "niet ingesteld"
     }
   ],
   "first_seen_ids": {
@@ -1072,9 +1056,10 @@
     "live-concurrent-24db91d59835c": "2026-11-13T14:36:37Z",
     "live-sector-e8a12cec4ddc5": "2026-11-15T13:56:51Z",
     "live-sector-e09bcb249548c": "2026-11-17T12:00:14Z",
-    "live-sector-63c87d28e1da0": "2026-11-17T12:00:14Z"
+    "live-sector-63c87d28e1da0": "2026-11-17T12:00:14Z",
+    "live-sector-12bacf779ab70": "2026-11-18T15:40:54Z"
   },
-  "new_count": 0,
+  "new_count": 1,
   "content_score_backfill_ran": false,
   "platform_backfill_ran": false
 }
