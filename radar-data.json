@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T15:45:48Z",
+  "updated_at": "2026-11-20T15:28:18Z",
   "update_mode": "automatische bronontdekking (niet inhoudelijk geverifieerd)",
   "sources_ok": 5,
   "baseline": {
@@ -471,40 +471,6 @@
       }
     },
     {
-      "id": "live-concurrent-a90ceae1bf3c1",
-      "category": "concurrent",
-      "kind": "Concurrentiecontent",
-      "date": "23/10/2026",
-      "sort": 20261023,
-      "source": "Randstad",
-      "title": "gecorrigeerde loonkloof stijgt naar 2,21%.",
-      "summary": "Nieuw artikel gevonden bij Randstad. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
-      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9LZTliVHRaT2RIMmd3RC1IYXdld0I2cV81MzVZVE9nMzJENnlKTVcwR2lIeUVPQ2d6MDh0QXd1VXc5UkNBSUZTdWZmQl9vN01PdmozV2N3azlSNi11ZFlJcXV1UDRUZzVWZ1hhVXdTVGFaSGxFbUJYaFdmcw?oc=5",
-      "topic": "gecorrigeerde loonkloof stijgt naar 2,21%.",
-      "audience": "kandidaten en werkgevers",
-      "priority": "Te beoordelen",
-      "verification": "Automatisch gevonden · inhoud nog nakijken",
-      "first_seen": "2026-11-09T10:23:11Z",
-      "ai_analysis": {
-        "samenvatting": "Volgens de aangehaalde Hudson Reward Survey steeg de gecorrigeerde loonkloof bij bedienden van 1,79% naar 2,21%. Het aandeel bedrijven binnen de marge van ±5% daalde van 80% naar 75%; kmo’s met 100 tot 250 werknemers zijn volgens het artikel een aandachtspunt.",
-        "betekenis": "De cijfers wijzen volgens het artikel op grotere loonverschillen binnen dezelfde functie en leeftijd, vooral bij de stap naar management. Dat maakt loontransparantie een concreet gespreksthema voor Go4Jobs’ kmo-klanten.",
-        "marketingactie": "Deel met kmo-klanten een korte post over de stijging van de kloof bij management en stel de vraag hoe zij loon en doorgroei naar leidinggevende functies helder bespreken.",
-        "kanttekening": "Controleer de surveyperiode, de vermelding van 2026 en of de cijfers over kmo’s specifiek slaan op bedrijven met 100 tot 250 werknemers."
-      },
-      "article_url": "https://www.randstad.be/over-ons/nieuws/gecorrigeerde-loonkloof-stijgt/",
-      "ai_version": 2,
-      "ai_status": "geanalyseerd",
-      "content_score_version": 2,
-      "content_score": {
-        "score": 76,
-        "motivatie": "Relevant voor Go4Jobs’ kmo-klanten en HR: de cijfers bieden een concrete aanleiding om loontransparantie en doorgroei naar management te bespreken. De invalshoek is bruikbaar, maar",
-        "basis": "geanalyseerde brontekst",
-        "platform": "linkedin",
-        "platformreden": "Een gerichte vraag over loontransparantie en doorgroei sluit aan bij kmo-werkgevers en HR-professionals."
-      }
-    },
-    {
       "id": "live-sector-d2595e6f2e2f3",
       "category": "sector",
       "kind": "Werk & economie",
@@ -957,6 +923,24 @@
       "verification": "Automatisch gevonden · inhoud nog nakijken",
       "first_seen": "2026-11-19T15:45:48Z",
       "ai_status": "niet ingesteld"
+    },
+    {
+      "id": "live-sector-c5be5750f634d",
+      "category": "sector",
+      "kind": "Werk & economie",
+      "date": "29/10/2026",
+      "sort": 20261029,
+      "source": "Statbel",
+      "title": "Waar werken de Belgen eigenlijk? Een nieuwe blik op 1,43 miljoen vestigingen - statbel.fgov.be",
+      "summary": "Nieuw artikel gevonden bij Statbel. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
+      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNDV4YndCYUREX1ByN1A4VTItRVFhSjJJS2xES1lGRnJYS09UUnlWZlJsSHJBVnBwbjhfMUhWOTdkdUFKU3lYdzc3b29Pa1ZmZlUyS1k0U1NUd1NCWWRrb1VaX2FTNmlHTGtYMVM1clJUSGJERW14bTRlbnR4U2Zka1ZHNVVWMWlicXgxOWk3ZUZ5ajBFdkRWN1RqdlRpd3YwN1Q1bnhQeWJYSHcy?oc=5",
+      "topic": "Waar werken de Belgen eigenlijk? Een nieuwe blik op 1,43 miljoen vestigingen - statbel.fgov.be",
+      "audience": "werkgevers en kandidaten",
+      "priority": "Te beoordelen",
+      "verification": "Automatisch gevonden · inhoud nog nakijken",
+      "first_seen": "2026-11-20T15:28:18Z",
+      "ai_status": "niet ingesteld"
     }
   ],
   "first_seen_ids": {
@@ -999,9 +983,10 @@
     "live-sector-e52d8151d40a4": "2026-11-19T15:45:48Z",
     "live-sector-328b2f1568a1d": "2026-11-19T15:45:48Z",
     "live-concurrent-80aab05773fe7": "2026-11-19T15:45:48Z",
-    "live-sector-00cdbef4029cf": "2026-11-19T15:45:48Z"
+    "live-sector-00cdbef4029cf": "2026-11-19T15:45:48Z",
+    "live-sector-c5be5750f634d": "2026-11-20T15:28:18Z"
   },
-  "new_count": 6,
+  "new_count": 1,
   "content_score_backfill_ran": false,
   "platform_backfill_ran": false
 }
