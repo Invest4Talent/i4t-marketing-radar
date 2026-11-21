@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T15:28:18Z",
+  "updated_at": "2026-11-21T14:40:45Z",
   "update_mode": "automatische bronontdekking (niet inhoudelijk geverifieerd)",
   "sources_ok": 5,
   "baseline": {
@@ -984,7 +984,8 @@
     "live-sector-328b2f1568a1d": "2026-11-19T15:45:48Z",
     "live-concurrent-80aab05773fe7": "2026-11-19T15:45:48Z",
     "live-sector-00cdbef4029cf": "2026-11-19T15:45:48Z",
-    "live-sector-c5be5750f634d": "2026-11-20T15:28:18Z"
+    "live-sector-c5be5750f634d": "2026-11-20T15:28:18Z",
+    "live-sector-72735466c6d3b": "2026-11-21T14:40:45Z"
   },
   "new_count": 1,
   "content_score_backfill_ran": false,
