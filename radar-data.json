@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T14:40:45Z",
+  "updated_at": "2026-11-22T14:36:10Z",
   "update_mode": "automatische bronontdekking (niet inhoudelijk geverifieerd)",
   "sources_ok": 5,
   "baseline": {
@@ -987,7 +987,7 @@
     "live-sector-c5be5750f634d": "2026-11-20T15:28:18Z",
     "live-sector-72735466c6d3b": "2026-11-21T14:40:45Z"
   },
-  "new_count": 1,
+  "new_count": 0,
   "content_score_backfill_ran": false,
   "platform_backfill_ran": false
 }
