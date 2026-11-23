@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T14:36:10Z",
+  "updated_at": "2026-11-23T10:34:58Z",
   "update_mode": "automatische bronontdekking (niet inhoudelijk geverifieerd)",
   "sources_ok": 5,
   "baseline": {
@@ -437,40 +437,6 @@
       }
     },
     {
-      "id": "live-sector-5425ec5600947",
-      "category": "sector",
-      "kind": "Arbeidsmarkt",
-      "date": "23/10/2026",
-      "sort": 20261023,
-      "source": "VDAB",
-      "title": "BioTechBad laat werkzoekenden kennismaken met Oost-Vlaamse biotechbedrijven",
-      "summary": "Nieuw artikel gevonden bij VDAB. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
-      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMFdyQ1g2b2lrblhSSWdpZ1ZZVkpPUzF0VzZ1a0RpMEhiVHBhNHZQWEFjalBNSUFVeFoxeFdOcWkzdEpIMG91S1lzbDJhTW1SY1o3WXFKazlEcWZpUXdHZW1xOUdKdy1sWHNiR3VmU3FKbHpZcXVnaTB3OTl3dXRzRDVXLTR1aTdRWEo2d1JzUTl2N2U5SUlFaE1pZUV0ckdfVEJudlVPeW5DdHRnY0MzQ05LREE?oc=5",
-      "topic": "BioTechBad laat werkzoekenden kennismaken met Oost-Vlaamse biotechbedrijven",
-      "audience": "kandidaten en werkgevers",
-      "priority": "Te beoordelen",
-      "verification": "Automatisch gevonden · inhoud nog nakijken",
-      "first_seen": "2026-11-09T10:23:11Z",
-      "ai_analysis": {
-        "samenvatting": "BioTechBad bereidt werkzoekenden voor op productiejobs bij Gentse biotechbedrijven; een diploma of voorkennis is niet vereist. Bij de eerste editie nam Legend Biotech 5 van de 7 kandidaten aan.",
-        "betekenis": "Het traject toont een concrete instroomroute naar biotechproductie voor kandidaten zonder technische achtergrond. Dat kan interessant zijn voor Go4Jobs-kandidaten die een nieuwe sector willen verkennen.",
-        "marketingactie": "Deel via Go4Jobs-kanalen de VDAB-link met kandidaten in Oost-Vlaanderen en vermeld dat BioTechBad geen specifiek diploma vereist.",
-        "kanttekening": "Controleer bij VDAB of de edities van november 2026 nog doorgaan en hoe kandidaten zich kunnen aanmelden."
-      },
-      "article_url": "https://www.vdab.be/nieuws-voor-de-pers/oost-vlaanderen/biotechbad-laat-werkzoekenden-kennismaken-met-oost-vlaamse",
-      "ai_version": 2,
-      "ai_status": "geanalyseerd",
-      "content_score_version": 2,
-      "content_score": {
-        "score": 78,
-        "motivatie": "Sterke match voor werkzoekenden in Oost-Vlaanderen: een concrete instroomroute naar biotechproductie zonder vereist diploma. De eerste aanwervingsresultaten maken het tastbaar. Act",
-        "basis": "geanalyseerde brontekst",
-        "platform": "meta",
-        "platformreden": "Een visuele post kan kandidaten in Oost-Vlaanderen laagdrempelig wijzen op de instroomroute en VDAB-link."
-      }
-    },
-    {
       "id": "live-sector-d2595e6f2e2f3",
       "category": "sector",
       "kind": "Werk & economie",
@@ -724,7 +690,23 @@
       "priority": "Te beoordelen",
       "verification": "Automatisch gevonden · inhoud nog nakijken",
       "first_seen": "2026-11-12T10:09:23Z",
-      "ai_status": "niet ingesteld"
+      "ai_status": "geanalyseerd",
+      "article_url": "https://statbel.fgov.be/nl/nieuws/met-minder-dan-3-van-de-ondernemingen-maar-meer-dan-31-van-de-werkgelegenheid-spelen",
+      "ai_analysis": {
+        "samenvatting": "In 2024 telde België 11.110 multinationale groepen: 2,72% van de juridische eenheden, maar goed voor 31,4% van de werkgelegenheid. Bij groepen met een Belgisch beslissingshoofd was de industrie de grootste sector naar werkgelegenheid.",
+        "betekenis": "Multinationale groepen wegen zwaar door in de Belgische werkgelegenheid, en de industrie is belangrijk binnen de groepen met Belgisch beslissingshoofd. Het artikel geeft geen exact aandeel van de industrie.",
+        "marketingactie": "Maak een LinkedIn-post voor industriële werkgevers met de Statbel-cijfers: multinationale groepen vertegenwoordigen 31,4% van de werkgelegenheid; de industrie is de grootste sector bij groepen met Belgisch beslissingshoofd.",
+        "kanttekening": "Controleer vóór publicatie of de cijfers nog actueel zijn; het artikel vermeldt geen exact werkgelegenheidsaandeel voor de industrie."
+      },
+      "ai_version": 2,
+      "content_score": {
+        "score": 75,
+        "motivatie": "De Statbel-cijfers bieden bruikbare arbeidsmarktcontext en een concrete invalshoek voor industriële werkgevers. De link met kandidaten en lokale kmo’s is indirect, en zonder exact ",
+        "basis": "geanalyseerde brontekst",
+        "platform": "linkedin",
+        "platformreden": "De cijfers over werkgelegenheid en industrie bieden relevante marktcontext voor werkgevers; vermeld dat het industrieaandeel niet exact is."
+      },
+      "content_score_version": 2
     },
     {
       "id": "live-sector-e6f3d844f96b9",
@@ -742,7 +724,23 @@
       "priority": "Te beoordelen",
       "verification": "Automatisch gevonden · inhoud nog nakijken",
       "first_seen": "2026-11-13T14:36:37Z",
-      "ai_status": "niet ingesteld"
+      "ai_status": "geanalyseerd",
+      "article_url": "https://www.vdab.be/nieuws-voor-de-pers/vlaams-brabant/vdab-brengt-lokaal-talent-en-werkgevers-samen-op-jobbeurs-diest",
+      "ai_analysis": {
+        "samenvatting": "VDAB organiseert op 10 november van 13 tot 16 uur een gratis jobbeurs in Diest, waar werkzoekenden rechtstreeks werkgevers kunnen ontmoeten. Magazijnmedewerker en productiemedewerker zijn populaire beroepen bij de lokale arbeidsreserve.",
+        "betekenis": "De jobbeurs sluit aan bij kandidaten in Diest die werk zoeken als magazijn- of productiemedewerker. Rechtstreeks contact met werkgevers kan hen helpen vacatures te ontdekken en hun talent te tonen.",
+        "marketingactie": "Deel de VDAB-jobbeurs gericht met kandidaten uit de regio Diest die interesse hebben in magazijn- of productiewerk, en verwijs naar inschrijven vooraf of ter plaatse.",
+        "kanttekening": "Controleer het jaartal en de actuele eventinformatie vóór publicatie; het artikel vermeldt geen deelname van Go4Jobs."
+      },
+      "ai_version": 2,
+      "content_score": {
+        "score": 59,
+        "motivatie": "Sterke regionale match voor kandidaten in magazijn- en productiewerk, met direct bruikbare eventinformatie. De datum is niet gejaard en actualiteit moet worden gecontroleerd; zonde",
+        "basis": "geanalyseerde brontekst",
+        "platform": "meta",
+        "platformreden": "Een korte, visuele regionale aankondiging kan Diestse kandidaten gericht naar de jobbeurs wijzen."
+      },
+      "content_score_version": 2
     },
     {
       "id": "live-concurrent-24db91d59835c",
@@ -760,7 +758,23 @@
       "priority": "Te beoordelen",
       "verification": "Automatisch gevonden · inhoud nog nakijken",
       "first_seen": "2026-11-13T14:36:37Z",
-      "ai_status": "niet ingesteld"
+      "ai_status": "geanalyseerd",
+      "article_url": "https://www.randstad.be/workforce360/flexibility-labour-market/hr-actuapodcast-arbeidsmarkt-verandert-veranderen-we-snel/",
+      "ai_analysis": {
+        "samenvatting": "De podcast bespreekt zes actuele HR-thema’s, waaronder de verschuiving van vaste functies naar wendbare skills en de groeiende verantwoordelijkheid van werkgevers. Ook komen onbenut talent en schaarser wordende loonsverhogingen aan bod.",
+        "betekenis": "De aandacht voor wendbare skills en human skills biedt een concreet aanknopingspunt om met werkgevers te praten over hoe zij talent beoordelen, los van vaste functietitels.",
+        "marketingactie": "Maak een LinkedIn-post over de verschuiving naar wendbare skills en human skills, met één vraag aan lokale werkgevers over hoe zij die vaardigheden herkennen bij kandidaten.",
+        "kanttekening": "Controleer de podcastinhoud en de genoemde salarisstudie; de artikeltekst geeft geen verdere details of cijfers."
+      },
+      "ai_version": 2,
+      "content_score": {
+        "score": 68,
+        "motivatie": "Wendbare en menselijke vaardigheden bieden een bruikbare invalshoek voor gesprekken met lokale werkgevers. De context bevat weinig details of cijfers en vraagt om verificatie.",
+        "basis": "geanalyseerde brontekst",
+        "platform": "linkedin",
+        "platformreden": "De invalshoek richt zich op werkgevers en HR: vraag hoe lokale werkgevers human skills bij kandidaten herkennen."
+      },
+      "content_score_version": 2
     },
     {
       "id": "live-sector-88b4c5aefb365",
@@ -778,7 +792,33 @@
       "priority": "Te beoordelen",
       "verification": "Automatisch gevonden · inhoud nog nakijken",
       "first_seen": "2026-11-09T10:23:11Z",
-      "ai_status": "niet ingesteld"
+      "ai_status": "geanalyseerd",
+      "article_url": "https://statbel.fgov.be/nl/themas/conjunctuurindicatoren/productie/totale-productie-de-marktgeorienteerde-sectoren",
+      "ai_analysis": {
+        "samenvatting": "In augustus 2026 lag de totale productie 0,6% hoger dan een jaar eerder. De industriële productie daalde op jaarbasis met 7,1% en tegenover juli met 5,1%.",
+        "betekenis": "De daling in de industrie is een concreet signaal om bij productiebedrijven de evolutie van hun personeelsnoden op te volgen. De cijfers tonen op zich niet aan dat de vraag naar uitzendkrachten verandert.",
+        "marketingactie": "Peil bij enkele productieklanten naar hun personeelsplanning en verwijs daarbij naar de gemelde daling van 7,1% op jaarbasis in de industriële productie.",
+        "kanttekening": "De cijfers voor juli en augustus 2026 zijn voorlopig; controleer de definitieve resultaten voor je ze extern gebruikt."
+      },
+      "ai_version": 2,
+      "content_score": {
+        "score": 64,
+        "motivatie": "Relevante productiecijfers bieden een aanleiding voor gesprek met werkgevers, maar zeggen niets rechtstreeks over de vraag naar uitzendkrachten. De cijfers zijn voorlopig.",
+        "basis": "geanalyseerde brontekst",
+        "platform": "linkedin",
+        "platformreden": "De cijfers zijn vooral relevant als marktcontext voor productiebedrijven en een voorzichtige vraag over hun personeelsplanning."
+      },
+      "content_score_version": 2,
+      "combined_score": 60,
+      "market_interest": {
+        "theme": "productiejobs",
+        "score": 50,
+        "avg_monthly_searches": 880,
+        "keyword": "productiemedewerker",
+        "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
+        "basis": "90% Keyword Planner / 10% Search Console",
+        "market_score": 48
+      }
     },
     {
       "id": "live-sector-e09bcb249548c",
@@ -796,7 +836,23 @@
       "priority": "Te beoordelen",
       "verification": "Automatisch gevonden · inhoud nog nakijken",
       "first_seen": "2026-11-17T12:00:14Z",
-      "ai_status": "niet ingesteld"
+      "ai_status": "geanalyseerd",
+      "article_url": "https://www.vdab.be/nieuws-voor-de-pers/oost-vlaanderen/gentse-bartenderopleiding-trekt-heel-wat-kandidaten",
+      "ai_analysis": {
+        "samenvatting": "In Gent startten 10 werkzoekenden met een zesweekse bartenderopleiding, gevolgd door drie weken stage. VDAB meldt 475 vacatures voor horecapersoneel in Gent in de afgelopen 12 maanden.",
+        "betekenis": "Het artikel beschrijft een opleiding die vakkennis en praktijkervaring combineert voor een job in de horeca. Die sectorgerichte aanpak sluit niet rechtstreeks aan bij Go4Jobs’ focus op productie, logistiek en lokale kmo’s.",
+        "marketingactie": "Geen directe actie: de opleiding en de genoemde vacatures betreffen de horecasector, buiten Go4Jobs’ genoemde focus.",
+        "kanttekening": "Controleer de publicatiedatum en actualiteit van de 475 vacatures; de tekst vermeldt enkel ‘de afgelopen 12 maanden’."
+      },
+      "ai_version": 2,
+      "content_score": {
+        "score": 10,
+        "motivatie": "De opleiding en vacatures zijn gericht op horeca, buiten Go4Jobs’ focus. De informatie biedt weinig bruikbare aanknopingspunten voor eigen content; actualiteit van de vacaturecijfe",
+        "basis": "geanalyseerde brontekst",
+        "platform": "geen",
+        "platformreden": "Geen zinvolle invalshoek voor Go4Jobs’ kandidaten- of werkgeverskanalen: het onderwerp draait om horeca."
+      },
+      "content_score_version": 2
     },
     {
       "id": "live-sector-63c87d28e1da0",
@@ -814,7 +870,23 @@
       "priority": "Te beoordelen",
       "verification": "Automatisch gevonden · inhoud nog nakijken",
       "first_seen": "2026-11-17T12:00:14Z",
-      "ai_status": "niet ingesteld"
+      "ai_status": "geanalyseerd",
+      "article_url": "https://www.vdab.be/nieuws-voor-de-pers/limburg/faillissement-vynova-vdab-organiseert-extra-zitdagen-voor-getroffen",
+      "ai_analysis": {
+        "samenvatting": "VDAB organiseert extra zitdagen in Tessenderlo-Ham voor ongeveer 600 werknemers die hun job verliezen door het faillissement van Vynova. Volgens het artikel moesten zij zich vóór 26 november inschrijven als werkzoekende.",
+        "betekenis": "De zitdagen tonen dat er in de regio Tessenderlo-Ham een grote groep werknemers uit een chemiebedrijf werk zoekt. Dat biedt Go4Jobs een concrete aanleiding om lokale jobmogelijkheden te verkennen voor getroffen werknemers.",
+        "marketingactie": "Neem contact op met VDAB Limburg om af te stemmen of Go4Jobs getroffen Vynova-werknemers kan uitnodigen voor een vrijblijvende intake over lokale vacatures.",
+        "kanttekening": "Controleer of de inschrijvingsdeadline en zitdagen nog actueel zijn en stem elk contact met werknemers af met VDAB."
+      },
+      "ai_version": 2,
+      "content_score": {
+        "score": 67,
+        "motivatie": "Concrete regionale aanleiding en duidelijke doelgroep, maar de deadline en zitdagen kunnen verouderd zijn. Zonder bevestigde vacatures of actuele details blijft de content beperkt;",
+        "basis": "geanalyseerde brontekst",
+        "platform": "linkedin",
+        "platformreden": "LinkedIn past bij een lokaal arbeidsmarktverhaal en afstemming met VDAB en werkgevers, zonder onbevestigde vacatures aan kandidaten te beloven."
+      },
+      "content_score_version": 2
     },
     {
       "id": "live-sector-12bacf779ab70",
@@ -832,7 +904,23 @@
       "priority": "Te beoordelen",
       "verification": "Automatisch gevonden · inhoud nog nakijken",
       "first_seen": "2026-11-18T15:40:54Z",
-      "ai_status": "niet ingesteld"
+      "ai_status": "geanalyseerd",
+      "article_url": "https://www.vdab.be/nieuws-voor-de-pers/antwerpen/acht-enthousiaste-werkzoekenden-kiezen-voor-het-bartenderberoep",
+      "ai_analysis": {
+        "samenvatting": "Acht werkzoekenden volgden in Antwerpen een zesweekse bartenderopleiding van Learning for Life. Ze starten nu met een stage van drie weken in een horecazaak.",
+        "betekenis": "De opleiding is dit jaar voor de achtste keer georganiseerd door Diageo, Horeca Forma, stad Antwerpen en VDAB. Het artikel gaat over horeca, niet over productie, logistiek of lokale kmo’s.",
+        "marketingactie": "Geen directe actie: het artikel biedt geen concrete aanknopingspunten voor Go4Jobs’ focus op productie, logistiek en lokale kmo’s.",
+        "kanttekening": "Het artikel vermeldt geen resultaten over hoeveel cursisten na de stage werk vinden."
+      },
+      "ai_version": 2,
+      "content_score": {
+        "score": 5,
+        "motivatie": "De opleiding en stage zijn concreet, maar het onderwerp gaat uitsluitend over horeca, buiten de Go4Jobs-focus. Er zijn geen resultaten over werk na de stage en geen sterke eigen in",
+        "basis": "geanalyseerde brontekst",
+        "platform": "geen",
+        "platformreden": "Geen zinvolle contentkans voor Go4Jobs’ focus op productie, logistiek en lokale kmo’s."
+      },
+      "content_score_version": 2
     },
     {
       "id": "live-sector-ac94cb1413f35",
@@ -850,7 +938,23 @@
       "priority": "Te beoordelen",
       "verification": "Automatisch gevonden · inhoud nog nakijken",
       "first_seen": "2026-11-19T15:45:48Z",
-      "ai_status": "niet ingesteld"
+      "ai_status": "geanalyseerd",
+      "article_url": "https://www.vdab.be/nieuws-voor-de-pers/vlaams-brabant/30-werkgevers-zoeken-nieuw-talent-op-jobbeurs-londerzeel-meise",
+      "ai_analysis": {
+        "samenvatting": "VDAB en drie lokale besturen organiseren op 19 november 2026 een gratis jobbeurs in Malderen. Dertig werkgevers bieden vacatures aan, onder meer in logistiek en transport.",
+        "betekenis": "Colruyt Group, Distrilog en NV Gebr. Hermans zoeken onder meer magazijniers en heftruckchauffeurs. Dat maakt de beurs concreet relevant voor werkzoekenden die Go4Jobs voor logistieke functies wil bereiken.",
+        "marketingactie": "Deel de beursgegevens via Go4Jobs’ lokale kanalen en wijs werkzoekenden op de logistieke werkgevers en functies die volgens het artikel aanwezig zijn.",
+        "kanttekening": "Controleer bij VDAB of datum, deelname van de genoemde werkgevers en vacatures nog actueel zijn vóór publicatie."
+      },
+      "ai_version": 2,
+      "content_score": {
+        "score": 82,
+        "motivatie": "Sterk lokaal aanbod voor Vlaamse kandidaten: datum, locatie, werkgevers en logistieke functies geven concrete informatie. De beurs is relevant voor Go4Jobs’ doelgroep; controleer v",
+        "basis": "geanalyseerde brontekst",
+        "platform": "meta",
+        "platformreden": "Een visuele, lokale Facebook- of Instagram-post kan werkzoekenden snel informeren over de beurs en aanwezige logistieke functies."
+      },
+      "content_score_version": 2
     },
     {
       "id": "live-sector-1ba5561944b04",
@@ -868,7 +972,33 @@
       "priority": "Te beoordelen",
       "verification": "Automatisch gevonden · inhoud nog nakijken",
       "first_seen": "2026-11-19T15:45:48Z",
-      "ai_status": "niet ingesteld"
+      "ai_status": "geanalyseerd",
+      "article_url": "https://statbel.fgov.be/nl/nieuws/productiewaarde-van-de-landbouwsector-stijgt-2025-met-25",
+      "ai_analysis": {
+        "samenvatting": "De definitieve rekeningen tonen dat de productiewaarde van de landbouwsector in 2025 met 2,5% steeg. Dierlijke productie groeide met 7,4%, terwijl groenten en tuinbouwproducten met 9,5% daalden.",
+        "betekenis": "De cijfers tonen uiteenlopende evoluties binnen de landbouw: de groei komt van dierlijke productie, terwijl groenten en tuinbouwproducten terugvallen. Het artikel zegt niets over werkgelegenheid of aanwervingen.",
+        "marketingactie": "Geen directe actie: de productiewaarden leveren op zichzelf geen concrete aanwijzing op voor een aanwervingscampagne van Go4Jobs.",
+        "kanttekening": "Controleer afzonderlijk of er actuele informatie is over vacatures of personeelsnoden in de landbouwsector."
+      },
+      "ai_version": 2,
+      "content_score": {
+        "score": 20,
+        "motivatie": "Landbouwproductie raakt deels aan productie en lokale bedrijven, maar de cijfers geven geen informatie over werkgelegenheid of personeelsnoden. Er is weinig basis voor onderscheide",
+        "basis": "geanalyseerde brontekst",
+        "platform": "geen",
+        "platformreden": "Zonder actuele informatie over vacatures of personeelsnoden levert dit geen zinvolle eigen contentinvalshoek op."
+      },
+      "content_score_version": 2,
+      "combined_score": 28,
+      "market_interest": {
+        "theme": "productiejobs",
+        "score": 50,
+        "avg_monthly_searches": 880,
+        "keyword": "productiemedewerker",
+        "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
+        "basis": "90% Keyword Planner / 10% Search Console",
+        "market_score": 48
+      }
     },
     {
       "id": "live-sector-e52d8151d40a4",
@@ -886,7 +1016,23 @@
       "priority": "Te beoordelen",
       "verification": "Automatisch gevonden · inhoud nog nakijken",
       "first_seen": "2026-11-19T15:45:48Z",
-      "ai_status": "niet ingesteld"
+      "ai_status": "geanalyseerd",
+      "article_url": "https://statbel.fgov.be/nl/themas/werk-opleiding/lonen-en-arbeidskosten/arbeidskosten",
+      "ai_analysis": {
+        "samenvatting": "Volgens Statbel kostte een werkuur Belgische bedrijven in 2024 gemiddeld €48,61, 20% meer dan in 2020. De kosten verschillen volgens sector, bedrijfsgrootte en gewest; de cijfers slaan op ondernemingen met meer dan 10 werknemers.",
+        "betekenis": "De stijging van 20% is een concreet aanknopingspunt om met kmo’s over hun personeelsplanning te praten. De cijfers geven geen afzonderlijke arbeidskost voor productie- of logistieke kmo’s.",
+        "marketingactie": "Maak een korte LinkedIn-post met de stijging van €40,50 naar €48,61 per werkuur en nodig lokale kmo’s uit om met Go4Jobs over hun personeelsplanning te praten.",
+        "kanttekening": "Controleer de publicatie: de tekst noemt resultaten voor 2024, maar vermeldt bij de frequentie dat het laatste jaar 2020 is."
+      },
+      "ai_version": 2,
+      "content_score": {
+        "score": 64,
+        "motivatie": "De stijging van de gemiddelde uurkost is bruikbare context voor werkgevers en personeelsplanning. De cijfers zijn relevant voor lokale kmo’s, maar omvatten alleen ondernemingen met",
+        "basis": "geanalyseerde brontekst",
+        "platform": "linkedin",
+        "platformreden": "De arbeidskoststijging biedt werkgevers een concreet aanknopingspunt voor een gesprek over personeelsplanning, mits de publicatiedatum wordt gecontrol"
+      },
+      "content_score_version": 2
     },
     {
       "id": "live-sector-328b2f1568a1d",
@@ -904,7 +1050,23 @@
       "priority": "Te beoordelen",
       "verification": "Automatisch gevonden · inhoud nog nakijken",
       "first_seen": "2026-11-19T15:45:48Z",
-      "ai_status": "niet ingesteld"
+      "ai_status": "geanalyseerd",
+      "article_url": "https://statbel.fgov.be/nl/themas/conjunctuurindicatoren/werk/loonmassa",
+      "ai_analysis": {
+        "samenvatting": "De seizoensgecorrigeerde loonmassa-index in de industrie bedroeg 123,27 in het tweede kwartaal van 2026, een stijging van 1,3% tegenover hetzelfde kwartaal in 2025. De cijfers zijn voorlopig.",
+        "betekenis": "De stijging gaat over de totale loonmassa in de industrie, niet noodzakelijk over het loon van individuele werknemers. Ze biedt Go4Jobs een concreet cijfer om de evolutie van de industriële loonmassa te duiden.",
+        "marketingactie": "Maak een korte LinkedIn-post met de industriële loonmassa-index en de jaarstijging van 1,3%; vermeld duidelijk dat dit een voorlopige, geaggregeerde loonmassa-index is.",
+        "kanttekening": "Controleer of Statbel de voorlopige cijfers intussen heeft herzien en behoud het onderscheid tussen totale loonmassa en individueel loon."
+      },
+      "ai_version": 2,
+      "content_score": {
+        "score": 56,
+        "motivatie": "De industriële loonmassa-index is een bruikbaar marktgegeven voor werkgevers en productiecontext. De stijging van 1,3% is concreet, maar zegt niets rechtstreeks over individuele lo",
+        "basis": "geanalyseerde brontekst",
+        "platform": "linkedin",
+        "platformreden": "Een voorlopige geaggregeerde loonmassa-index past als marktinzicht voor werkgevers, mits duidelijk onderscheiden van individueel loon."
+      },
+      "content_score_version": 2
     },
     {
       "id": "live-concurrent-80aab05773fe7",
@@ -922,7 +1084,23 @@
       "priority": "Te beoordelen",
       "verification": "Automatisch gevonden · inhoud nog nakijken",
       "first_seen": "2026-11-19T15:45:48Z",
-      "ai_status": "niet ingesteld"
+      "ai_status": "geanalyseerd",
+      "article_url": "https://www.randstad.be/carriere/carrieretips/4-5-werken-jouw-vragen-beantwoord/",
+      "ai_analysis": {
+        "samenvatting": "Het artikel legt uit dat 4/5 werken 80% van een voltijds uurrooster is, meestal verdeeld over vier dagen. Het bespreekt onder meer loon, verlof, voordelen en mogelijke pensioenimpact.",
+        "betekenis": "Voor kandidaten die deeltijds werk overwegen, maakt het artikel concreet dat 4/5 in een standaardweek van 38 uur neerkomt op 30,4 uur. Dat kan vragen oproepen over uurrooster en loon.",
+        "marketingactie": "Publiceer een korte Go4Jobs-FAQ of social post: “Wat betekent 4/5 in een 38-urenweek?” Vermeld 30,4 uur en dat de spreiding per werkgever kan verschillen.",
+        "kanttekening": "Controleer vóór publicatie de actuele regels rond loon, verlof en pensioen bij officiële bronnen; het artikel meldt dat de pensioenhervorming 2025-2029 nog niet volledig vaststaat."
+      },
+      "ai_version": 2,
+      "content_score": {
+        "score": 76,
+        "motivatie": "Sterke match voor kandidaten die deeltijds werk overwegen. De concrete omzetting naar 30,4 uur in een 38-urenweek leent zich tot een bruikbare FAQ; loon, verlof en pensioen vragen ",
+        "basis": "geanalyseerde brontekst",
+        "platform": "meta",
+        "platformreden": "Een korte, visuele FAQ over 30,4 uur beantwoordt een concrete kandidaatvraag op Facebook of Instagram."
+      },
+      "content_score_version": 2
     },
     {
       "id": "live-sector-c5be5750f634d",
@@ -940,7 +1118,67 @@
       "priority": "Te beoordelen",
       "verification": "Automatisch gevonden · inhoud nog nakijken",
       "first_seen": "2026-11-20T15:28:18Z",
-      "ai_status": "niet ingesteld"
+      "ai_status": "geanalyseerd",
+      "article_url": "https://statbel.fgov.be/nl/nieuws/waar-werken-de-belgen-eigenlijk-een-nieuwe-blik-op-143-miljoen-vestigingen",
+      "ai_analysis": {
+        "samenvatting": "Statbel brengt 1,43 miljoen vestigingen in kaart voor 2015-2024; één op de vijf heeft werknemers. Banen per vestiging geven een ander regionaal beeld dan banen per hoofdkantoor.",
+        "betekenis": "Administratieve en ondersteunende diensten, waaronder uitzendwerk, behoren tot vier sectoren die samen 64% van de verschuiving tussen de gewesten verklaren. Dat maakt de nieuwe kijk op de werkplek relevant voor Go4Jobs.",
+        "marketingactie": "Maak een korte LinkedIn-post die uitlegt waarom banen per vestiging een ander beeld geven dan banen per hoofdkantoor, en vermeld dat uitzendwerk tot de genoemde sectoren behoort.",
+        "kanttekening": "Statbel noemt de cijfers experimenteel; gemeentelijke resultaten zijn bovendien per categorie gepubliceerd en niet als exacte cijfers."
+      },
+      "ai_version": 2,
+      "content_score": {
+        "score": 84,
+        "motivatie": "Sterke link met uitzendarbeid en regionale arbeidsmarktinzichten. Het verschil tussen vestigings- en hoofdkantoorcijfers biedt een concrete invalshoek voor werkgevers; experimentel",
+        "basis": "geanalyseerde brontekst",
+        "platform": "linkedin",
+        "platformreden": "Regionale arbeidsmarktinzichten en de rol van uitzendwerk zijn relevant voor werkgevers en HR."
+      },
+      "content_score_version": 2
+    },
+    {
+      "id": "live-sector-bdce29a65ddc8",
+      "category": "sector",
+      "kind": "Werk & economie",
+      "date": "12/11/2026",
+      "sort": 20261112,
+      "source": "Statbel",
+      "title": "Totale productie in de marktgeoriënteerde sectoren - statbel.fgov.be",
+      "summary": "Nieuw artikel gevonden bij Statbel. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
+      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMXc1VF9pNzFKMTFrc3dsamNhQncyV2t4TjJVV3haNVNwdU1LVE9ZTTJZenRuRGlCQWtpVHJsb3BqRHZKTjFBRl9rQUdBVzI4Z05uLWk4bDZOYWdsOG1jTFFlTm9DbEVLZWpmQzR3TUlqU2Y3TnppRUF6R1JHUkhGX3Z0dWxpYU1WcXdqZndNRTFRa0x5UjZIc0lhTzh0YTdlQlloR1VNcHBVSC1tVEZ4M3VNQjA?oc=5",
+      "topic": "Totale productie in de marktgeoriënteerde sectoren - statbel.fgov.be",
+      "audience": "werkgevers en kandidaten",
+      "priority": "Te beoordelen",
+      "verification": "Automatisch gevonden · inhoud nog nakijken",
+      "first_seen": "2026-11-23T10:34:58Z",
+      "article_url": "https://statbel.fgov.be/nl/themas/conjunctuurindicatoren/productie/totale-productie-de-marktgeorienteerde-sectoren",
+      "ai_analysis": {
+        "samenvatting": "De totale productie in marktgeoriënteerde sectoren steeg in augustus 2026 met 0,6% tegenover augustus 2025. De industrie daalde 7,1% op jaarbasis en 5,1% tegenover juli; de cijfers voor juli en augustus zijn voorlopig.",
+        "betekenis": "De productiedaling in de industrie is relevant voor Go4Jobs’ focus op productie, maar zegt op zich niets over de personeelsvraag. De stijging van de totale productie komt niet overeen met de trend in de industrie.",
+        "marketingactie": "Bezorg industriële klanten de Statbel-cijfers en vraag gericht of de productiedaling hun personeelsplanning beïnvloedt.",
+        "kanttekening": "Controleer de definitieve cijfers zodra die beschikbaar zijn; productie-indexen meten geen vacatures of personeelsbehoefte."
+      },
+      "ai_version": 2,
+      "ai_status": "geanalyseerd",
+      "content_score": {
+        "score": 68,
+        "motivatie": "De industriële productiedaling is relevant voor productiebedrijven en actueel, maar zegt niets rechtstreeks over personeelsvraag. Een gerichte vraag aan klanten biedt een bruikbare",
+        "basis": "geanalyseerde brontekst",
+        "platform": "linkedin",
+        "platformreden": "De cijfers bieden een actuele marktinvalshoek voor industriële werkgevers, met ruimte om klanten naar de impact op hun personeelsplanning te vragen."
+      },
+      "content_score_version": 2,
+      "combined_score": 64,
+      "market_interest": {
+        "theme": "productiejobs",
+        "score": 50,
+        "avg_monthly_searches": 880,
+        "keyword": "productiemedewerker",
+        "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
+        "basis": "90% Keyword Planner / 10% Search Console",
+        "market_score": 48
+      }
     }
   ],
   "first_seen_ids": {
@@ -985,9 +1223,10 @@
     "live-concurrent-80aab05773fe7": "2026-11-19T15:45:48Z",
     "live-sector-00cdbef4029cf": "2026-11-19T15:45:48Z",
     "live-sector-c5be5750f634d": "2026-11-20T15:28:18Z",
-    "live-sector-72735466c6d3b": "2026-11-21T14:40:45Z"
+    "live-sector-72735466c6d3b": "2026-11-21T14:40:45Z",
+    "live-sector-bdce29a65ddc8": "2026-11-23T10:34:58Z"
   },
-  "new_count": 0,
-  "content_score_backfill_ran": false,
-  "platform_backfill_ran": false
+  "new_count": 1,
+  "content_score_backfill_ran": true,
+  "platform_backfill_ran": true
 }
