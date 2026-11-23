@@ -9,6 +9,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  actions: read
   pages: write
   id-token: write
 concurrency:
@@ -63,9 +64,27 @@ jobs:
           cp index.html radar-data.json public/
           touch public/.nojekyll
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v5
         with:
           path: public
+      - name: Wacht tot publicatiebestand zichtbaar is bij GitHub
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Een upload kan kort na afloop nog niet zichtbaar zijn via de artifact-API.
+          # Probeer opnieuw voordat deploy-pages dit bestand opvraagt.
+          for poging in 1 2 3 4 5 6; do
+            artifact_id=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts" --jq '.artifacts[] | select(.name == "github-pages" and .expired == false) | .id' || true)
+            if [ -n "$artifact_id" ]; then
+              echo "GitHub Pages-artifact beschikbaar: $artifact_id"
+              exit 0
+            fi
+            echo "Publicatiebestand nog niet zichtbaar (poging $poging/6)."
+            sleep 10
+          done
+          echo "::error::Uploadstap afgerond, maar github-pages-artifact blijft onvindbaar. Controleer Actions-artifacts."
+          exit 1
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
