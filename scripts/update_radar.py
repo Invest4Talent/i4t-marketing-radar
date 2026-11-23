@@ -112,7 +112,7 @@ def discover_media(lookback_days=30):
             print('Mediabron niet bereikbaar:', source, str(exc)[:140], file=sys.stderr)
             continue
         # Kleine limieten voorkomen te veel externe requests en betaalde AI-aanroepen.
-        for title, link, date in candidates[:8]:
+        for title, link, date in candidates[:5]:
             if accepted >= MAX_MEDIA_PER_SOURCE or len(items) >= MAX_MEDIA_TOTAL:
                 break
             title = re.sub(r'\s*[-–|]\s*' + re.escape(source) + r'\s*$', '', title, flags=re.I).strip()
@@ -381,8 +381,12 @@ def retain_news(live, base):
     selected = media + others[:max(0, MAX_ACTIVE_NEWS - len(media))]
     if len(selected) < MAX_ACTIVE_NEWS:
         present = {item['id'] for item in selected}
-        selected.extend(item for item in ranked if item['id'] not in present
-                        and len(selected) < MAX_ACTIVE_NEWS)
+        for item in ranked:
+            if len(selected) >= MAX_ACTIVE_NEWS:
+                break
+            if item['id'] not in present:
+                selected.append(item)
+                present.add(item['id'])
     ids = {item['id'] for item in selected}
     live = [item for item in live if item.get('id') in ids]
     base['items'] = [item for item in base.get('items', []) if item.get('id') in ids]
