@@ -17,7 +17,7 @@ from content_score import enrich_scores
 from market_opportunity import load_market_signals, enrich_opportunities
 from gsc_opportunity import load_signals as load_gsc_signals
 from media_sources import (MEDIA_SOURCES, MAX_MEDIA_PER_SOURCE, MAX_MEDIA_TOTAL,
-                           relevant_media_title, fetch_public_media_text)
+                           relevant_media_title, relevant_media_article, fetch_public_media_text)
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'radar-data.json'
@@ -121,7 +121,8 @@ def discover_media(lookback_days=30):
             direct_url = resolve_google_news_url(link)
             if urllib.parse.urlparse(direct_url).hostname == 'news.google.com':
                 continue
-            if not fetch_public_media_text(direct_url, domain):
+            article_text = fetch_public_media_text(direct_url, domain)
+            if not article_text or not relevant_media_article(title, article_text):
                 continue
             unique = hashlib.sha1(direct_url.split('?')[0].encode()).hexdigest()[:16]
             if unique in article_ids:
@@ -432,6 +433,11 @@ def main():
         old = by_id.get(fresh['id'], {})
         by_id[fresh['id']] = {**old, **fresh}
     live = list(by_id.values())
+    # Verwijder ook eerder ontdekte algemene media die niet langer aan
+    # de aangescherpte relevantiecriteria voldoen. Andere categorieën blijven intact.
+    live = [item for item in live
+            if item.get('category') != 'media'
+            or relevant_media_article(item.get('title', ''))]
     live = retain_news(live, base)
     # Eenmalige inhaalronde voor alle bestaande nieuwsartikels en blogsignalen.
     first_backfill = (not previous.get('content_score_backfill_ran', False)
