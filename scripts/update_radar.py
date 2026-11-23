@@ -449,11 +449,15 @@ def main():
         baseline_news, old_baseline.get('items', []), limit=remaining)
     base['items'] = baseline_news
     remaining = max(0, remaining - used_baseline)
-    used_scoring = enrich_scores(live, previous_live, api_key, AI_MODEL, remaining)
-    remaining = max(0, remaining - used_scoring)
+    # Contentkans gebruikt een afzonderlijk budget: nieuwe artikelanalyses mogen
+    # de scoreberekening niet volledig blokkeren. Maximaal 10 extra API-oproepen
+    # per gewone run voor nieuws + gecontroleerde blogsignalen samen.
+    score_budget = 50 if first_backfill else 10
+    used_scoring = enrich_scores(live, previous_live, api_key, AI_MODEL, score_budget)
+    score_remaining = max(0, score_budget - used_scoring)
     baseline_items = base.get('items', []) + base.get('alerts', [])
     old_baseline_items = old_baseline.get('items', []) + old_baseline.get('alerts', [])
-    enrich_scores(baseline_items, old_baseline_items, api_key, AI_MODEL, remaining)
+    enrich_scores(baseline_items, old_baseline_items, api_key, AI_MODEL, score_remaining)
     # De gecombineerde score gebruikt marktbreed Keyword Planner-volume, nooit GSC-vertoningen.
     # Thema's zonder betrouwbare export-match behouden de bestaande AI-score.
     market_signals = load_market_signals()
