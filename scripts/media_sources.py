@@ -75,6 +75,10 @@ def relevant_media_article(title, article_text=""):
         return False
     if PUBLIC_EMPLOYER_RE.search(title) and PUBLIC_STAFF_EVENT_RE.search(title):
         return False
+    # Gemeentelijk besparingsnieuws noemt soms alleen de plaatsnaam,
+    # zonder 'stad' of 'gemeente' in de kop.
+    if re.search(r"\b(?:belastingen|stadsbegroting|schepencollege|gemeentebegroting)\b", title, re.I) and PUBLIC_STAFF_EVENT_RE.search(title):
+        return False
     if BROAD_LABOUR_MARKET_RE.search(title):
         return True
     text = (article_text or "")[:4500]
