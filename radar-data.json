@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-23T10:45:24Z",
+  "updated_at": "2026-11-23T14:30:05Z",
   "update_mode": "automatische bronontdekking (niet inhoudelijk geverifieerd)",
-  "sources_ok": 5,
+  "sources_ok": 7,
   "baseline": {
     "items": [
       {
@@ -35,48 +35,6 @@
           "platformreden": "De cijfers en Arvastat-tip bieden een concreet marktinzicht voor recruiters en werkgevers."
         },
         "content_score_version": 2
-      },
-      {
-        "id": "news-federgon-sep",
-        "category": "sector",
-        "kind": "Uitzendmarkt",
-        "date": "26 okt 2026",
-        "sort": 20261026,
-        "source": "Federgon",
-        "title": "Uitzendactiviteit daalt in september met 3,91% op jaarbasis",
-        "summary": "Het aantal gepresteerde uitzenduren daalde met 0,82% tegenover augustus (seizoensgezuiverd). Het arbeiderssegment daalde sterker dan het bediendesegment.",
-        "impact": "Relevante context voor de focus van Go4Jobs op productie en logistiek; combineer deze cijfers met eigen instroom- en plaatsingscijfers.",
-        "url": "https://federgon.be/nl/nieuws/bericht/de-uitzendactiviteit-blijft-onder-druk-staan-in-september",
-        "topic": "Wat leert de dalende uitzendactiviteit ons over de arbeidsmarkt?",
-        "audience": "bedrijven en kandidaten",
-        "priority": "Hoog",
-        "article_url": "https://federgon.be/nl/nieuws/bericht/de-uitzendactiviteit-blijft-onder-druk-staan-in-september",
-        "ai_analysis": {
-          "samenvatting": "In september 2026 daalden de gepresteerde uitzenduren met 0,82% tegenover augustus. Op jaarbasis was de daling 3,91%; bij arbeiders bedroeg die 4,83%.",
-          "betekenis": "De sterkere daling bij arbeiders is relevant voor Go4Jobs’ focus op productie en logistiek. Het artikel toont een sectortrend, maar zegt niet hoe die evolueert bij Go4Jobs of lokale kmo’s.",
-          "marketingactie": "Maak een korte LinkedIn-post met de Federgon-cijfers, benadruk de jaar-op-jaardaling van 4,83% bij arbeiders en nodig lokale werkgevers uit om hun personeelsnoden te bespreken.",
-          "kanttekening": "Controleer de cijfers en publicatiedatum bij Federgon vóór publicatie, en toets of de trend aansluit bij Go4Jobs’ eigen klanten."
-        },
-        "ai_version": 2,
-        "ai_status": "geanalyseerd",
-        "content_score": {
-          "score": 72,
-          "motivatie": "De daling bij arbeiders sluit goed aan bij productie en logistiek en biedt concrete sectorcijfers. De cijfers zeggen niets over Go4Jobs of lokale kmo’s, dus toets ze eerst aan eige",
-          "basis": "geanalyseerde brontekst",
-          "platform": "linkedin",
-          "platformreden": "De Federgon-cijfers bieden een concrete marktinsteek voor werkgevers; nodig lokale kmo’s uit om hun personeelsnoden te bespreken."
-        },
-        "content_score_version": 2,
-        "combined_score": 70,
-        "market_interest": {
-          "theme": "interim-jobs",
-          "score": 65,
-          "avg_monthly_searches": 2400,
-          "keyword": "interim jobs",
-          "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
-          "basis": "90% Keyword Planner / 10% Search Console",
-          "market_score": 61
-        }
       }
     ],
     "alerts": [
@@ -281,40 +239,6 @@
       }
     },
     {
-      "id": "live-sector-5b668dd6692e7",
-      "category": "sector",
-      "kind": "Arbeidsmarkt",
-      "date": "27/10/2026",
-      "sort": 20261027,
-      "source": "VDAB",
-      "title": "Succesvolle Job- en Opleidingsbeurs brengt honderden werkzoekenden en werkgevers samen in Oostende",
-      "summary": "Nieuw artikel gevonden bij VDAB. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
-      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNOE1IOVV2ZFpYU3lnaVFJTlA3ZHd2Rm1obHJWcHQteUNFdjE1Y1RFcU44ZTRHRnVkekxyWGhXNDNHbFFSTzgwbzNsaTVESXVIb0FhWnFPS3pNaDZRNWJuQTlmVHpfSnVpNllFZy0xZ3ViT3c2Z0xlUTJnZnkxQTR4QW5rVThfcmtQczlEUmZSaTZKZFBzZ2tYUVIwX2VaRnMyWE93bTZEV3FTVkk?oc=5",
-      "topic": "Succesvolle Job- en Opleidingsbeurs brengt honderden werkzoekenden en werkgevers samen in Oostende",
-      "audience": "kandidaten en werkgevers",
-      "priority": "Te beoordelen",
-      "verification": "Automatisch gevonden · inhoud nog nakijken",
-      "first_seen": "2026-11-09T10:23:11Z",
-      "ai_analysis": {
-        "samenvatting": "De vijfde Job- en Opleidingsbeurs in Oostende bracht 964 bezoekers en 39 werkgevers samen. Bezoekers konden vacatures ontdekken, solliciteren en informatie over opleidingen en begeleiding krijgen.",
-        "betekenis": "De beurs omvatte ook productie en bood werkgevers rechtstreeks contact met werkzoekenden. Volgens het artikel vonden er sollicitatiegesprekken en vervolgafspraken plaats.",
-        "marketingactie": "Neem contact op met VDAB en het Economisch Huis Oostende om te vragen of Go4Jobs met vacatures in productie of logistiek kan deelnemen aan een volgende editie.",
-        "kanttekening": "Controleer of er een volgende editie gepland is en of Go4Jobs er als uitzendbedrijf kan deelnemen."
-      },
-      "article_url": "https://www.vdab.be/nieuws-voor-de-pers/west-vlaanderen/succesvolle-job-en-opleidingsbeurs-brengt-honderden",
-      "ai_version": 2,
-      "ai_status": "geanalyseerd",
-      "content_score_version": 2,
-      "content_score": {
-        "score": 58,
-        "motivatie": "Lokale beurs met productieaanbod en rechtstreeks contact tussen werkgevers en werkzoekenden biedt een concrete Go4Jobs-invalshoek. De volgende editie en deelnamekansen zijn nog onz",
-        "basis": "geanalyseerde brontekst",
-        "platform": "linkedin",
-        "platformreden": "Geschikt om werkgeverscontact en mogelijke deelname aan een volgende editie te bespreken; check eerst of die editie gepland is."
-      }
-    },
-    {
       "id": "live-concurrent-72cedc63fb526",
       "category": "concurrent",
       "kind": "Concurrentiecontent",
@@ -346,94 +270,6 @@
         "basis": "geanalyseerde brontekst",
         "platform": "meta",
         "platformreden": "Een korte carrousel met herkenbare signalen past bij kandidaten op Facebook en Instagram; koppel de afsluitende vacatureverwijzing aan passend aanbod."
-      }
-    },
-    {
-      "id": "live-sector-eb43e36baa60c",
-      "category": "sector",
-      "kind": "Arbeidsmarkt",
-      "date": "26/10/2026",
-      "sort": 20261026,
-      "source": "VDAB",
-      "title": "Sollicitatietraining voor leefloongerechtigden als voorbereiding op jobbeurs Zuid-Oost Limburg",
-      "summary": "Nieuw artikel gevonden bij VDAB. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
-      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQY0ZrWWpDTW13T2JEQUhDeTc4cHJ1QVZzMFlib3ZDVHplZ3F2Qk5SVlFsZnZ4c09rUmV4cDBVekEzR2VYMUFfTmFtRTFVam0xT012YXEtd29MS2dXZjFIY2JUN0tmOFVGOWhqTFN3WGEwSUZjU3MzM3NMOS0wMlNmbVpsay14elVXWEFFdmJrQW1wa1UtUzJSeURPaFpkMndjSVdCTFYyWnRyc0JIQVJFR2w5cExDUQ?oc=5",
-      "topic": "Sollicitatietraining voor leefloongerechtigden als voorbereiding op jobbeurs Zuid-Oost Limburg",
-      "audience": "kandidaten en werkgevers",
-      "priority": "Te beoordelen",
-      "verification": "Automatisch gevonden · inhoud nog nakijken",
-      "first_seen": "2026-11-09T10:23:11Z",
-      "ai_analysis": {
-        "samenvatting": "VDAB, Travi en vier lokale besturen organiseren op 27 oktober een jobbeurs in Zuid-Oost Limburg met 532 vacatures. Voor 30 inwoners met een leefloon zijn vooraf sollicitatietrainingen georganiseerd.",
-        "betekenis": "De training bereidt leefloongerechtigden concreet voor op contact met werkgevers; bedrijven kregen vooraf informatie over de aanwezige profielen. Dat biedt Go4Jobs een aanknopingspunt om inclusieve matching bij regionale jobbeurzen te ondersteunen.",
-        "marketingactie": "Neem contact op met VDAB of Travi en peil naar deelname aan een volgende jobbeurs, met vacatures en een korte briefing voor recruiters over de aanwezige profielen.",
-        "kanttekening": "Controleer bij VDAB of de beurs op 27 oktober nog moet plaatsvinden en of er een volgende editie of deelnamekans is."
-      },
-      "article_url": "https://www.vdab.be/nieuws-voor-de-pers/limburg/sollicitatietraining-voor-leefloongerechtigden-als-voorbereiding-op",
-      "ai_version": 2,
-      "ai_status": "geanalyseerd",
-      "content_score_version": 2,
-      "content_score": {
-        "score": 64,
-        "motivatie": "Sterke regionale link met kandidaten en inclusieve matching, plus een concreet voorbeeld van voorbereiding op werkgeverscontact. De actualiteitswaarde is onzeker: controleer eerst ",
-        "basis": "geanalyseerde brontekst",
-        "platform": "linkedin",
-        "platformreden": "Een post over inclusieve matching en voorbereiding van recruiters sluit aan bij lokale werkgevers en HR."
-      },
-      "combined_score": 64,
-      "market_interest": {
-        "theme": "solliciteren",
-        "score": 62,
-        "avg_monthly_searches": 2400,
-        "keyword": "solliciteren",
-        "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
-        "basis": "90% Keyword Planner / 10% Search Console",
-        "market_score": 61
-      }
-    },
-    {
-      "id": "live-sector-f33171d084d8c",
-      "category": "sector",
-      "kind": "Uitzendmarkt",
-      "date": "26/10/2026",
-      "sort": 20261026,
-      "source": "Federgon",
-      "title": "De uitzendactiviteit blijft onder druk staan in september",
-      "summary": "Nieuw artikel gevonden bij Federgon. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
-      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNXBXTndRMGUwWG01d2FLRDFmRnZWTVBNVUFaX05FUXhMRWpQbC1JMzQxSmVtMnVSLUpVWk9sUkhwZDN0T1N3TzZ3aEVFNFBCUE5UUjU5ZlY2Y2VoaHc1MjE4TXNSNDV1QUVqYTMxXzdyYlo5MlVKTjRXR0JWcXV6TkpmaFlmWVgtU1B1VFh3Z3EzNWJEeDI4VklWdw?oc=5",
-      "topic": "De uitzendactiviteit blijft onder druk staan in september",
-      "audience": "werkgevers en kandidaten",
-      "priority": "Te beoordelen",
-      "verification": "Automatisch gevonden · inhoud nog nakijken",
-      "first_seen": "2026-11-09T10:23:11Z",
-      "ai_analysis": {
-        "samenvatting": "In september 2026 daalden de gepresteerde uitzenduren met 0,82% tegenover augustus. Het arbeiderssegment kromp 2,09% op maandbasis en 4,83% tegenover september 2025.",
-        "betekenis": "De cijfers tonen een terugval in het arbeiderssegment, maar zeggen niet hoe de vraag evolueert bij Go4Jobs-klanten of in specifieke regio’s.",
-        "marketingactie": "Vraag productie- en logistieke klanten in een korte mail of de terugval in arbeidersuren ook bij hen speelt en welke personeelsnoden ze verwachten.",
-        "kanttekening": "Controleer regionale en sectorspecifieke cijfers en de actuele personeelsnoden bij klanten; het artikel geeft alleen nationale cijfers."
-      },
-      "article_url": "https://federgon.be/nl/nieuws/bericht/de-uitzendactiviteit-blijft-onder-druk-staan-in-september",
-      "ai_version": 2,
-      "ai_status": "geanalyseerd",
-      "content_score_version": 2,
-      "content_score": {
-        "score": 76,
-        "motivatie": "De terugval in arbeidersuren is relevant voor productie en logistiek en biedt een concrete aanleiding om klanten naar hun personeelsnoden te vragen. De cijfers zijn nationaal en to",
-        "basis": "geanalyseerde brontekst",
-        "platform": "linkedin",
-        "platformreden": "De nationale markttrend is relevant voor werkgevers; deel ze met de kanttekening dat regionale en klantgegevens ontbreken."
-      },
-      "combined_score": 73,
-      "market_interest": {
-        "theme": "interim-jobs",
-        "score": 65,
-        "avg_monthly_searches": 2400,
-        "keyword": "interim jobs",
-        "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
-        "basis": "90% Keyword Planner / 10% Search Console",
-        "market_score": 61
       }
     },
     {
@@ -637,40 +473,6 @@
         "basis": "geanalyseerde brontekst",
         "platform": "linkedin",
         "platformreden": "Een korte post voor lokale kmo’s kan het verschil tussen hoofdkantoor en werkelijke werkplek helder maken, met Statbels cijfer en de nodige nuance."
-      },
-      "content_score_version": 2
-    },
-    {
-      "id": "live-concurrent-1c1e6c66d000e",
-      "category": "concurrent",
-      "kind": "Concurrentiecontent",
-      "date": "27/10/2026",
-      "sort": 20261027,
-      "source": "Randstad",
-      "title": "Tijd om een nieuwe job te zoeken: 6 signalen",
-      "summary": "Nieuw artikel gevonden bij Randstad. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
-      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBxNlR4WkEwMk1FNHA0cFdNNEZkTjNtZGlpQ2dqMHZTakNGLUVodTA0M1lQOXQxOTRsdnctMUJOVkYzTmVNSjFaenRjX1ZQNEIzLWtlMzU5WTFwX2x0ZUFSY3JsNTMwRTA0M1BEaVlnQVVTdUxPNTFGemx3?oc=5",
-      "topic": "Tijd om een nieuwe job te zoeken: 6 signalen",
-      "audience": "kandidaten en werkgevers",
-      "priority": "Te beoordelen",
-      "verification": "Automatisch gevonden · inhoud nog nakijken",
-      "first_seen": "2026-11-12T07:33:46Z",
-      "article_url": "https://www.randstad.be/carriere/carrieretips/het-tijd-een-nieuwe-job/",
-      "ai_analysis": {
-        "samenvatting": "Het artikel noemt zes signalen om een jobwissel te overwegen, zoals aanhoudende verveling, gebrek aan waardering en weinig doorgroeikansen. Bij verveling van 6 tot 12 maanden raadt het eerst een gesprek met de manager aan.",
-        "betekenis": "De genoemde signalen bieden een concreet haakje om werknemers te laten nadenken over hun job. Het artikel zegt niet dat ze meteen moeten vertrekken: bij aanhoudende verveling stelt het eerst een gesprek met de manager voor.",
-        "marketingactie": "Maak een korte post met de zes signalen en nodig lezers uit Go4Jobs-vacatures te bekijken als ze een nieuwe job overwegen.",
-        "kanttekening": "Controleer vóór publicatie of er passende vacatures zijn; het artikel vermeldt geen specifieke sectoren of Go4Jobs-vacatures."
-      },
-      "ai_version": 2,
-      "ai_status": "geanalyseerd",
-      "content_score": {
-        "score": 67,
-        "motivatie": "Herkenbare en concrete invalshoek voor kandidaten, met de nuance dat een gesprek met de manager eerst kan helpen. De signalen zijn bruikbaar maar algemeen en niet tijdsgebonden; co",
-        "basis": "geanalyseerde brontekst",
-        "platform": "meta",
-        "platformreden": "Zes herkenbare signalen lenen zich voor een visuele carousel voor kandidaten, met een uitnodiging om passende Go4Jobs-vacatures te bekijken."
       },
       "content_score_version": 2
     },
@@ -1179,6 +981,141 @@
         "basis": "90% Keyword Planner / 10% Search Console",
         "market_score": 48
       }
+    },
+    {
+      "id": "live-media-86b0053ad628184e",
+      "category": "media",
+      "kind": "Algemene media",
+      "date": "23/11/2026",
+      "sort": 20261123,
+      "source": "VRT NWS",
+      "title": "Brugge schrapt 81 jobs bij stadspersoneel en 16 jobs bij OCMW: \"Naakte ontslagen zoveel mogelijk vermijden\" - VRT",
+      "summary": "Publiek leesbaar nieuwsartikel, automatisch geselecteerd op sectorrelevantie.",
+      "impact": "AI-interpretatie volgt na analyse van de oorspronkelijke brontekst.",
+      "url": "https://www.vrt.be/vrtnws/nl/2026/11/23/brugge-besparingen-meerjarenplan/",
+      "article_url": "https://www.vrt.be/vrtnws/nl/2026/11/23/brugge-besparingen-meerjarenplan/",
+      "topic": "Brugge schrapt 81 jobs bij stadspersoneel en 16 jobs bij OCMW: \"Naakte ontslagen zoveel mogelijk vermijden\" - VRT",
+      "audience": "kandidaten en werkgevers",
+      "priority": "Te beoordelen",
+      "verification": "Publiek leesbaar artikel · inhoud nog redactioneel controleren",
+      "public_text_verified": true,
+      "first_seen": "2026-11-23T14:30:05Z",
+      "ai_analysis": {
+        "samenvatting": "Brugge wil tegen het einde van de bestuursperiode 81 voltijdse equivalenten bij de stad en 16,38 bij het OCMW schrappen. De stad mikt vooral op natuurlijke uitstroom en wil rechtstreekse ontslagen zoveel mogelijk vermijden.",
+        "betekenis": "De aangekondigde afbouw gaat over functies bij de stad en het OCMW, vooral via niet-vervangen van vertrekkers. Het artikel meldt niet dat hierdoor meteen kandidaten beschikbaar komen voor private werkgevers.",
+        "marketingactie": "Geen directe actie: de geplande jobafbouw bij stad en OCMW toont op zichzelf geen concrete vraag naar uitzenddiensten of beschikbaarheid van kandidaten.",
+        "kanttekening": "Controleer bij eventuele opvolging of het plan en de aantallen ongewijzigd blijven; rechtstreekse ontslagen zijn volgens het artikel niet volledig uitgesloten."
+      },
+      "ai_version": 2,
+      "ai_status": "geanalyseerd"
+    },
+    {
+      "id": "live-media-61c0e8a8ef62176e",
+      "category": "media",
+      "kind": "Algemene media",
+      "date": "21/11/2026",
+      "sort": 20261121,
+      "source": "VRT NWS",
+      "title": "Politiezone Rode kampt met zwaar personeelstekort: 20 inspecteurs te weinig - VRT",
+      "summary": "Publiek leesbaar nieuwsartikel, automatisch geselecteerd op sectorrelevantie.",
+      "impact": "AI-interpretatie volgt na analyse van de oorspronkelijke brontekst.",
+      "url": "https://www.vrt.be/vrtnws/nl/2026/11/21/politiezone-rode-personeelstekort-tom-smets-taalvereiste/",
+      "article_url": "https://www.vrt.be/vrtnws/nl/2026/11/21/politiezone-rode-personeelstekort-tom-smets-taalvereiste/",
+      "topic": "Politiezone Rode kampt met zwaar personeelstekort: 20 inspecteurs te weinig - VRT",
+      "audience": "kandidaten en werkgevers",
+      "priority": "Te beoordelen",
+      "verification": "Publiek leesbaar artikel · inhoud nog redactioneel controleren",
+      "public_text_verified": true,
+      "first_seen": "2026-11-23T14:30:05Z",
+      "ai_analysis": {
+        "samenvatting": "Politiezone Rode heeft volgens het artikel 21 personeelsleden minder dan het kader voorziet. Door het tekort kan het kantoor enkel op afspraak bezoekers ontvangen en zijn extra patrouilles moeilijk inzetbaar.",
+        "betekenis": "Het artikel noemt pensionering, beperkte instroom en concurrentie van hogere lonen in Brussel als factoren bij het personeelstekort. Het gaat om politiepersoneel en toont geen rechtstreeks effect op productie, logistiek of lokale kmo’s.",
+        "marketingactie": "Geen directe actie: het artikel biedt geen concrete aanleiding voor een Go4Jobs-campagne in productie, logistiek of bij lokale kmo’s.",
+        "kanttekening": "Controleer bij de politiezone of de genoemde bezetting en tekorten nog actueel zijn; het artikel geeft een momentopname."
+      },
+      "ai_version": 2,
+      "ai_status": "geanalyseerd"
+    },
+    {
+      "id": "live-media-a069d28e71e80538",
+      "category": "media",
+      "kind": "Algemene media",
+      "date": "18/11/2026",
+      "sort": 20261118,
+      "source": "VRT NWS",
+      "title": "Kortrijk schrapt 120 jobs en bespaart 50 miljoen euro: \"Geen naakte ontslagen en geen extra belastingen\" - VRT",
+      "summary": "Publiek leesbaar nieuwsartikel, automatisch geselecteerd op sectorrelevantie.",
+      "impact": "AI-interpretatie volgt na analyse van de oorspronkelijke brontekst.",
+      "url": "https://www.vrt.be/vrtnws/nl/2026/11/18/kortrijk-besparingen-120-personeelsleden-minder-ruth-vandenbergh/",
+      "article_url": "https://www.vrt.be/vrtnws/nl/2026/11/18/kortrijk-besparingen-120-personeelsleden-minder-ruth-vandenbergh/",
+      "topic": "Kortrijk schrapt 120 jobs en bespaart 50 miljoen euro: \"Geen naakte ontslagen en geen extra belastingen\" - VRT",
+      "audience": "kandidaten en werkgevers",
+      "priority": "Te beoordelen",
+      "verification": "Publiek leesbaar artikel · inhoud nog redactioneel controleren",
+      "public_text_verified": true,
+      "first_seen": "2026-11-23T14:30:05Z",
+      "ai_analysis": {
+        "samenvatting": "Kortrijk plant 50 miljoen euro besparingen, waaronder 120 minder personeelsleden, zonder naakte ontslagen of extra belastingen. Personeel wordt waar mogelijk heroriënteerd; de recyclageparken zouden vanaf 2029 door IMOG worden uitgebaat.",
+        "betekenis": "De geplande personeelsafbouw kan kansen op begeleiding naar ander werk creëren, maar de stad wil eerst medewerkers intern heroriënteren. De overstap van de recyclageparken naar IMOG maakt die sectorale wijziging concreet.",
+        "marketingactie": "Laat het Go4Jobs-kantoor in Kortrijk de stad en IMOG contacteren om vrijwillige jobmatching aan te bieden aan medewerkers die niet intern herplaatst kunnen worden.",
+        "kanttekening": "Controleer of stad en IMOG openstaan voor ondersteuning, hoeveel medewerkers mogelijk extern werk zoeken en wanneer de personeelsverschuivingen plaatsvinden."
+      },
+      "ai_version": 2,
+      "ai_status": "geanalyseerd"
+    },
+    {
+      "id": "live-media-0d9c5aeaa82595ec",
+      "category": "media",
+      "kind": "Algemene media",
+      "date": "17/11/2026",
+      "sort": 20261117,
+      "source": "HR Square",
+      "title": "Weinig animo voor flexi-jobs in nieuwe sectoren",
+      "summary": "Publiek leesbaar nieuwsartikel, automatisch geselecteerd op sectorrelevantie.",
+      "impact": "AI-interpretatie volgt na analyse van de oorspronkelijke brontekst.",
+      "url": "https://hrsquare.be/nl/weinig-animo-voor-flexi-jobs-in-nieuwe-sectoren/",
+      "article_url": "https://hrsquare.be/nl/weinig-animo-voor-flexi-jobs-in-nieuwe-sectoren/",
+      "topic": "Weinig animo voor flexi-jobs in nieuwe sectoren",
+      "audience": "kandidaten en werkgevers",
+      "priority": "Te beoordelen",
+      "verification": "Publiek leesbaar artikel · inhoud nog redactioneel controleren",
+      "public_text_verified": true,
+      "first_seen": "2026-11-23T14:30:05Z",
+      "ai_analysis": {
+        "samenvatting": "Sinds de uitbreiding van flexi-jobs naar nieuwe sectoren gaat bijna 98% van de uren nog altijd naar sectoren waar ze al eerder mogelijk waren. In bouw, bewaking en vrije beroepen is het gebruik voorlopig beperkt; verdere kwartalen moeten uitwijzen hoe dat evolueert.",
+        "betekenis": "De cijfers tonen geen grote verschuiving naar nieuwe sectoren. Voor Go4Jobs is er dus geen bewijs dat flexi-jobs al een breed alternatief zijn voor reguliere personeelsinzet bij productie- en logistieke klanten.",
+        "marketingactie": "Vraag bij een gerichte selectie van productie- en logistieke klanten of de uitbreiding hun personeelsvraag heeft veranderd; gebruik de antwoorden om te bepalen of een latere flexi-jobcommunicatie zinvol is.",
+        "kanttekening": "Controleer de actuele sectorale toelatingsregels en volg nieuwe kwartaalcijfers op; dit artikel toont enkel een eerste balans."
+      },
+      "ai_version": 2,
+      "ai_status": "geanalyseerd"
+    },
+    {
+      "id": "live-media-54c0daf2c3040f33",
+      "category": "media",
+      "kind": "Algemene media",
+      "date": "12/11/2026",
+      "sort": 20261112,
+      "source": "HR Square",
+      "title": "Aantal vacatures op laagste niveau in tien jaar tijd",
+      "summary": "Publiek leesbaar nieuwsartikel, automatisch geselecteerd op sectorrelevantie.",
+      "impact": "AI-interpretatie volgt na analyse van de oorspronkelijke brontekst.",
+      "url": "https://hrsquare.be/nl/aantal-vacatures-op-laagste-niveau-in-tien-jaar-tijd/",
+      "article_url": "https://hrsquare.be/nl/aantal-vacatures-op-laagste-niveau-in-tien-jaar-tijd/",
+      "topic": "Aantal vacatures op laagste niveau in tien jaar tijd",
+      "audience": "kandidaten en werkgevers",
+      "priority": "Te beoordelen",
+      "verification": "Publiek leesbaar artikel · inhoud nog redactioneel controleren",
+      "public_text_verified": true,
+      "first_seen": "2026-11-23T14:30:05Z",
+      "ai_analysis": {
+        "samenvatting": "In oktober ontving VDAB 19.680 vacatures, 17% minder dan een jaar eerder; uitzendopdrachten zijn niet meegerekend. Over de voorbije twaalf maanden daalde het aantal vacatures met 15% tot 234.053.",
+        "betekenis": "De vacaturemeldingen daalden onder meer in machinebouw, hout- en meubelindustrie en transportmiddelen. Dat geeft Go4Jobs aanleiding om bij klanten in die sectoren de actuele personeelsbehoefte te toetsen.",
+        "marketingactie": "Stuur klanten in machinebouw, hout en meubel en transportmiddelen een korte update met de VDAB-daling van 15% en vraag naar hun rekruteringsplannen voor de komende maanden.",
+        "kanttekening": "De cijfers sluiten uitzendopdrachten uit; controleer de actuele VDAB-data vooraleer je de update verstuurt."
+      },
+      "ai_version": 2,
+      "ai_status": "geanalyseerd"
     }
   ],
   "first_seen_ids": {
@@ -1224,9 +1161,14 @@
     "live-sector-00cdbef4029cf": "2026-11-19T15:45:48Z",
     "live-sector-c5be5750f634d": "2026-11-20T15:28:18Z",
     "live-sector-72735466c6d3b": "2026-11-21T14:40:45Z",
-    "live-sector-bdce29a65ddc8": "2026-11-23T10:34:58Z"
+    "live-sector-bdce29a65ddc8": "2026-11-23T10:34:58Z",
+    "live-media-86b0053ad628184e": "2026-11-23T14:30:05Z",
+    "live-media-61c0e8a8ef62176e": "2026-11-23T14:30:05Z",
+    "live-media-a069d28e71e80538": "2026-11-23T14:30:05Z",
+    "live-media-0d9c5aeaa82595ec": "2026-11-23T14:30:05Z",
+    "live-media-54c0daf2c3040f33": "2026-11-23T14:30:05Z"
   },
-  "new_count": 0,
-  "content_score_backfill_ran": true,
-  "platform_backfill_ran": true
+  "new_count": 5,
+  "content_score_backfill_ran": false,
+  "platform_backfill_ran": false
 }
