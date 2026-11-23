@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T14:30:05Z",
+  "updated_at": "2026-11-23T14:38:14Z",
   "update_mode": "automatische bronontdekking (niet inhoudelijk geverifieerd)",
   "sources_ok": 7,
   "baseline": {
@@ -236,40 +236,6 @@
         "basis": "geanalyseerde brontekst",
         "platform": "geen",
         "platformreden": "Zonder bewijs dat de trends ook Vlaamse werkgevers buiten IT raken, levert eigen Go4Jobs-content weinig relevante waarde op."
-      }
-    },
-    {
-      "id": "live-concurrent-72cedc63fb526",
-      "category": "concurrent",
-      "kind": "Concurrentiecontent",
-      "date": "27/10/2026",
-      "sort": 20261027,
-      "source": "Randstad",
-      "title": "is het tijd voor een nieuwe job?",
-      "summary": "Nieuw artikel gevonden bij Randstad. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
-      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBxNlR4WkEwMk1FNHA0cFdNNEZkTjNtZGlpQ2dqMHZTakNGLUVodTA0M1lQOXQxOTRsdnctMUJOVkYzTmVNSjFaenRjX1ZQNEIzLWtlMzU5WTFwX2x0ZUFSY3JsNTMwRTA0M1BEaVlnQVVTdUxPNTFGemx3?oc=5",
-      "topic": "is het tijd voor een nieuwe job?",
-      "audience": "kandidaten en werkgevers",
-      "priority": "Te beoordelen",
-      "verification": "Automatisch gevonden · inhoud nog nakijken",
-      "first_seen": "2026-11-09T10:23:11Z",
-      "ai_analysis": {
-        "samenvatting": "Het artikel noemt zes signalen om een jobwissel te overwegen, zoals aanhoudende verveling, gebrek aan waardering en stress die ook buiten het werk speelt. Het raadt aan eerst na te denken over gewenste loopbaanstappen.",
-        "betekenis": "De zes signalen bieden Go4Jobs een concreet vertrekpunt om werknemers te helpen hun jobbehoeften te verwoorden. Het artikel stelt onder meer voor om bij langdurige verveling eerst meer verantwoordelijkheid, uitdagingen of opleiding te bespreken.",
-        "marketingactie": "Maak een korte socialmediacarrousel met de zes signalen uit het artikel en sluit af met een uitnodiging om het Go4Jobs-jobaanbod te bekijken.",
-        "kanttekening": "Controleer vóór publicatie welke vacatures in het Go4Jobs-aanbod passen bij de boodschap; de signalen zijn geen diagnose of bewijs dat iemand van job moet veranderen."
-      },
-      "article_url": "https://www.randstad.be/carriere/carrieretips/het-tijd-een-nieuwe-job/",
-      "ai_version": 2,
-      "ai_status": "geanalyseerd",
-      "content_score_version": 2,
-      "content_score": {
-        "score": 72,
-        "motivatie": "Herkenbaar en bruikbaar voor kandidaten: de zes signalen geven houvast om jobbehoeften te verwoorden. Het onderwerp is wel vrij algemeen en tijdloos; een carrousel kan het concreet",
-        "basis": "geanalyseerde brontekst",
-        "platform": "meta",
-        "platformreden": "Een korte carrousel met herkenbare signalen past bij kandidaten op Facebook en Instagram; koppel de afsluitende vacatureverwijzing aan passend aanbod."
       }
     },
     {
@@ -1007,7 +973,15 @@
         "kanttekening": "Controleer bij eventuele opvolging of het plan en de aantallen ongewijzigd blijven; rechtstreekse ontslagen zijn volgens het artikel niet volledig uitgesloten."
       },
       "ai_version": 2,
-      "ai_status": "geanalyseerd"
+      "ai_status": "geanalyseerd",
+      "content_score": {
+        "score": 22,
+        "motivatie": "Beperkte fit: het gaat om functies bij de Brugse stad en het OCMW, vooral via natuurlijke uitstroom. Dat levert geen concrete signalen op over private vacatures, kandidaten of uitz",
+        "basis": "geanalyseerde brontekst",
+        "platform": "geen",
+        "platformreden": "De geplande afbouw biedt te weinig concrete aanknopingspunten voor relevante Go4Jobs-content."
+      },
+      "content_score_version": 2
     },
     {
       "id": "live-media-61c0e8a8ef62176e",
@@ -1034,7 +1008,15 @@
         "kanttekening": "Controleer bij de politiezone of de genoemde bezetting en tekorten nog actueel zijn; het artikel geeft een momentopname."
       },
       "ai_version": 2,
-      "ai_status": "geanalyseerd"
+      "ai_status": "geanalyseerd",
+      "content_score": {
+        "score": 6,
+        "motivatie": "Het artikel gaat over een tekort bij de politie en biedt geen directe, bruikbare invalshoek voor kandidaten, productie, logistiek of lokale kmo’s. De cijfers zijn bovendien een mom",
+        "basis": "geanalyseerde brontekst",
+        "platform": "geen",
+        "platformreden": "Geen zinvolle Go4Jobs-invalshoek voor de doelgroep; de politiecontext sluit niet aan bij de sectoren en thema’s van Go4Jobs."
+      },
+      "content_score_version": 2
     },
     {
       "id": "live-media-a069d28e71e80538",
@@ -1061,7 +1043,15 @@
         "kanttekening": "Controleer of stad en IMOG openstaan voor ondersteuning, hoeveel medewerkers mogelijk extern werk zoeken en wanneer de personeelsverschuivingen plaatsvinden."
       },
       "ai_version": 2,
-      "ai_status": "geanalyseerd"
+      "ai_status": "geanalyseerd",
+      "content_score": {
+        "score": 56,
+        "motivatie": "Relevante lokale arbeidsmarktontwikkeling met mogelijke impact op personeel, maar interne heroriëntering staat voorop en externe jobmatching is nog niet bevestigd.",
+        "basis": "geanalyseerde brontekst",
+        "platform": "linkedin",
+        "platformreden": "Past bij een zakelijke kijk op lokale personeelsverschuivingen en werkgeversmatching, zonder te doen alsof er al een samenwerking is."
+      },
+      "content_score_version": 2
     },
     {
       "id": "live-media-0d9c5aeaa82595ec",
@@ -1088,7 +1078,25 @@
         "kanttekening": "Controleer de actuele sectorale toelatingsregels en volg nieuwe kwartaalcijfers op; dit artikel toont enkel een eerste balans."
       },
       "ai_version": 2,
-      "ai_status": "geanalyseerd"
+      "ai_status": "geanalyseerd",
+      "content_score": {
+        "score": 68,
+        "motivatie": "Relevante eerste cijfers voor productie en logistiek: flexi-jobs lijken daar nog geen breed alternatief. Een gerichte bevraging van klanten is een concrete invalshoek, maar de cijf",
+        "basis": "geanalyseerde brontekst",
+        "platform": "linkedin",
+        "platformreden": "De beperkte verschuiving naar nieuwe sectoren biedt een relevant marktinzicht voor werkgevers; vraag klanten hoe zij de uitbreiding ervaren."
+      },
+      "content_score_version": 2,
+      "combined_score": 76,
+      "market_interest": {
+        "theme": "flexi-jobs",
+        "score": 100,
+        "avg_monthly_searches": 49500,
+        "keyword": "flexi job",
+        "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
+        "basis": "90% Keyword Planner / 10% Search Console",
+        "market_score": 100
+      }
     },
     {
       "id": "live-media-54c0daf2c3040f33",
@@ -1115,7 +1123,50 @@
         "kanttekening": "De cijfers sluiten uitzendopdrachten uit; controleer de actuele VDAB-data vooraleer je de update verstuurt."
       },
       "ai_version": 2,
-      "ai_status": "geanalyseerd"
+      "ai_status": "geanalyseerd",
+      "content_score": {
+        "score": 74,
+        "motivatie": "De VDAB-cijfers zijn relevant voor werkgevers in machinebouw, hout en meubel en transportmiddelen, met een concrete aanleiding om hun rekruteringsplannen te toetsen. De cijfers slu",
+        "basis": "geanalyseerde brontekst",
+        "platform": "linkedin",
+        "platformreden": "De vacaturetrend en gerichte vraag naar rekruteringsplannen zijn vooral relevant voor werkgevers en HR."
+      },
+      "content_score_version": 2
+    },
+    {
+      "id": "live-media-5d8343c1c781d48c",
+      "category": "media",
+      "kind": "Algemene media",
+      "date": "17/11/2026",
+      "sort": 20261117,
+      "source": "VRT NWS",
+      "title": "Tiental Limburgse bedrijven melden zich spontaan om ontslagen werknemers van Vynova aan te werven - VRT",
+      "summary": "Publiek leesbaar nieuwsartikel, automatisch geselecteerd op sectorrelevantie.",
+      "impact": "AI-interpretatie volgt na analyse van de oorspronkelijke brontekst.",
+      "url": "https://www.vrt.be/vrtnws/nl/2026/11/17/voka-vynova-bedrijven-zoeken-ontslagen-werknemers-tessenderlo-ha/",
+      "article_url": "https://www.vrt.be/vrtnws/nl/2026/11/17/voka-vynova-bedrijven-zoeken-ontslagen-werknemers-tessenderlo-ha/",
+      "topic": "Tiental Limburgse bedrijven melden zich spontaan om ontslagen werknemers van Vynova aan te werven - VRT",
+      "audience": "kandidaten en werkgevers",
+      "priority": "Te beoordelen",
+      "verification": "Publiek leesbaar artikel · inhoud nog redactioneel controleren",
+      "public_text_verified": true,
+      "first_seen": "2026-11-23T14:38:14Z",
+      "ai_analysis": {
+        "samenvatting": "Een tiental Limburgse bedrijven meldde zich spontaan om ontslagen werknemers van Vynova aan te werven. Ze zoeken vooral technische profielen; Voka lanceert een WhatsApp-lijn om bedrijfsinteresse te verzamelen.",
+        "betekenis": "Volgens Voka blijven technische profielen schaars, terwijl er door het faillissement van Vynova zulke profielen op de arbeidsmarkt komen. Dat biedt mogelijk kansen voor gerichte matching, maar het artikel vermeldt geen rol voor Go4Jobs.",
+        "marketingactie": "Neem contact op met Voka om te vragen of Go4Jobs technische vacatures kan aanreiken voor mogelijke matching met ontslagen Vynova-werknemers.",
+        "kanttekening": "Controleer of Voka externe vacaturepartners betrekt en welke technische profielen en kandidaten beschikbaar zijn."
+      },
+      "ai_version": 2,
+      "ai_status": "geanalyseerd",
+      "content_score": {
+        "score": 78,
+        "motivatie": "Sterke Limburgse link met uitzendarbeid en schaarse technische profielen. Een concrete matchinginvalshoek is mogelijk, maar details over kandidaten en partnerwerking ontbreken.",
+        "basis": "geanalyseerde brontekst",
+        "platform": "linkedin",
+        "platformreden": "Deel een marktinzicht voor werkgevers: lokale bedrijven zoeken technische profielen terwijl ervaren werknemers beschikbaar komen."
+      },
+      "content_score_version": 2
     }
   ],
   "first_seen_ids": {
@@ -1166,9 +1217,10 @@
     "live-media-61c0e8a8ef62176e": "2026-11-23T14:30:05Z",
     "live-media-a069d28e71e80538": "2026-11-23T14:30:05Z",
     "live-media-0d9c5aeaa82595ec": "2026-11-23T14:30:05Z",
-    "live-media-54c0daf2c3040f33": "2026-11-23T14:30:05Z"
+    "live-media-54c0daf2c3040f33": "2026-11-23T14:30:05Z",
+    "live-media-5d8343c1c781d48c": "2026-11-23T14:38:14Z"
   },
-  "new_count": 5,
-  "content_score_backfill_ran": false,
-  "platform_backfill_ran": false
+  "new_count": 1,
+  "content_score_backfill_ran": true,
+  "platform_backfill_ran": true
 }
