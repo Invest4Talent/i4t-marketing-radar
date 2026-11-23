@@ -57,7 +57,8 @@ BROAD_LABOUR_MARKET_RE = re.compile(
 PRIVATE_MARKET_RE = re.compile(
     r"\b(?:bedrij(?:f|ven)|onderneming(?:en)?|fabrie(?:k|ken)|"
     r"industrie|industrieel|privé(?:sector)?|private sector|"
-    r"logistiek|magazijn|distributiecentrum|productie|"
+    r"logistiek|magazijn|distributiecentrum|"
+    r"productie(?:lijn|site|afdeling|vestiging|capaciteit|bedrijf|bedrijven)?|"
     r"retail|handel|horeca|kmo(?:'s)?|werkgever|"
     r"rekrutering|aanwerving(?:en)?|collectief ontslag|"
     r"herstructurering|faillissement)\b", re.I
