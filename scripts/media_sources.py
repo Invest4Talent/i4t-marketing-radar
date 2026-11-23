@@ -47,7 +47,7 @@ PUBLIC_STAFF_EVENT_RE = re.compile(
     r"jobs?|banen|werknemers?|inspecteurs?|bespaar|besparing)\b", re.I
 )
 BROAD_LABOUR_MARKET_RE = re.compile(
-    r"\b(?:uitzend|interim|flexi[ -]?job|arbeidsmarkt|"
+    r"\b(?:uitzend|interim|flexi[ -]?jobs?|arbeidsmarkt|"
     r"vacature(?:markt|graad|cijfers|aantal)|"
     r"aantal vacatures|knelpuntberoep|werkgelegenheid|"
     r"werkloosheid|werkzoekenden|werkgevers|"
