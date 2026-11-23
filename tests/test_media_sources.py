@@ -7,6 +7,7 @@ from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from media_sources import (
     fetch_public_media_text, matches_source, relevant_media_title,
+    relevant_media_article,
 )
 
 
@@ -28,6 +29,28 @@ class MediaSourceTests(unittest.TestCase):
         self.assertTrue(relevant_media_title("Bedrijf kondigt collectief ontslag aan"))
         self.assertFalse(relevant_media_title("De beste restaurants van dit weekend"))
         self.assertFalse(relevant_media_title("Voetbalclub wint belangrijke wedstrijd"))
+
+    def test_public_sector_personnel_excluded(self):
+        self.assertFalse(relevant_media_article(
+            'Brugge schrapt 81 jobs bij stadspersoneel en 16 jobs bij OCMW'))
+        self.assertFalse(relevant_media_article(
+            'Politiezone Rode kampt met zwaar personeelstekort: 20 inspecteurs te weinig'))
+        self.assertFalse(relevant_media_article(
+            'Kortrijk schrapt 120 jobs en bespaart 50 miljoen euro: geen extra belastingen'))
+
+    def test_commercial_and_marketwide_stories_kept(self):
+        self.assertTrue(relevant_media_article(
+            'Weinig animo voor flexi-jobs in nieuwe sectoren'))
+        self.assertTrue(relevant_media_article(
+            'Aantal vacatures op laagste niveau in tien jaar tijd'))
+        self.assertTrue(relevant_media_article(
+            'Limburgse bedrijven nemen ontslagen werknemers over van Vynova'))
+        self.assertTrue(relevant_media_article(
+            'Vynova ontslaat werknemers', 'Het chemiebedrijf sluit een productielijn.'))
+        self.assertTrue(relevant_media_article(
+            'Nieuwe arbeidsmarktmaatregelen voor werkgevers'))
+        self.assertFalse(relevant_media_article(
+            'Voetbalteam ontslaat trainer'))
 
     def test_only_allowed_publisher(self):
         self.assertTrue(matches_source("https://www.hrsquare.be/nl/artikel", "hrsquare.be"))
