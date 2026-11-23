@@ -16,6 +16,8 @@ import requests
 from content_score import enrich_scores
 from market_opportunity import load_market_signals, enrich_opportunities
 from gsc_opportunity import load_signals as load_gsc_signals
+from media_sources import (MEDIA_SOURCES, MAX_MEDIA_PER_SOURCE, MAX_MEDIA_TOTAL,
+                           relevant_media_title, fetch_public_media_text)
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'radar-data.json'
@@ -75,7 +77,7 @@ def is_individual_job(category, title, url=''):
             return True
     return False
 
-def fetch_news(query, lookback_days=30):
+def fetch_news(query, lookback_days=30, require_general_keywords=True):
     rss_url = 'https://news.google.com/rss/search?' + urllib.parse.urlencode({
         'q': query + ' when:' + str(lookback_days) + 'd', 'hl': 'nl-BE', 'gl': 'BE', 'ceid': 'BE:nl'})
     res = requests.get(rss_url, headers={'User-Agent': 'Go4JobsMarketingRadar/2.0 (news-summary)'}, timeout=22)
@@ -94,9 +96,55 @@ def fetch_news(query, lookback_days=30):
             continue
         if (TODAY-date).days > lookback_days + 2 or date > TODAY + dt.timedelta(days=1): continue
         title = html.unescape(re.sub(r'<[^>]*>', '', title))
-        if not any(k in title.lower() for k in KEYWORDS): continue
+        if require_general_keywords and not any(k in title.lower() for k in KEYWORDS): continue
         out.append((title, link, date))
     return out
+
+def discover_media(lookback_days=30):
+    """Algemene media: alleen relevante artikelen met verifieerbaar publieke tekst."""
+    items = []
+    article_ids = set()
+    for source, domain, query in MEDIA_SOURCES:
+        accepted = 0
+        try:
+            candidates = fetch_news(query, lookback_days, require_general_keywords=False)
+        except Exception as exc:
+            print('Mediabron niet bereikbaar:', source, str(exc)[:140], file=sys.stderr)
+            continue
+        # Kleine limieten voorkomen te veel externe requests en betaalde AI-aanroepen.
+        for title, link, date in candidates[:8]:
+            if accepted >= MAX_MEDIA_PER_SOURCE or len(items) >= MAX_MEDIA_TOTAL:
+                break
+            title = re.sub(r'\s*[-–|]\s*' + re.escape(source) + r'\s*$', '', title, flags=re.I).strip()
+            if not relevant_media_title(title) or is_individual_job('media', title, link):
+                continue
+            direct_url = resolve_google_news_url(link)
+            if urllib.parse.urlparse(direct_url).hostname == 'news.google.com':
+                continue
+            if not fetch_public_media_text(direct_url, domain):
+                continue
+            unique = hashlib.sha1(direct_url.split('?')[0].encode()).hexdigest()[:16]
+            if unique in article_ids:
+                continue
+            article_ids.add(unique)
+            date_local = date.astimezone(dt.timezone(dt.timedelta(hours=1)))
+            items.append({
+                'id': 'live-media-' + unique, 'category': 'media',
+                'kind': 'Algemene media', 'date': date_local.strftime('%d/%m/%Y'),
+                'sort': int(date.strftime('%Y%m%d')),
+                'source': source, 'title': title,
+                'summary': 'Publiek leesbaar nieuwsartikel, automatisch geselecteerd op sectorrelevantie.',
+                'impact': 'AI-interpretatie volgt na analyse van de oorspronkelijke brontekst.',
+                'url': direct_url, 'article_url': direct_url,
+                'topic': title, 'audience': 'kandidaten en werkgevers',
+                'priority': 'Te beoordelen',
+                'verification': 'Publiek leesbaar artikel · inhoud nog redactioneel controleren',
+                'public_text_verified': True,
+            })
+            accepted += 1
+        print('Algemene media:', source, accepted, 'relevante publiek leesbare artikels')
+    return sorted(items, key=lambda item: item['sort'], reverse=True)[:MAX_MEDIA_TOTAL]
+
 
 def get_id(category, url, title):
     return 'live-' + category + '-' + hashlib.sha1((url + title).encode()).hexdigest()[:13]
@@ -326,7 +374,16 @@ def retain_news(live, base):
     combined = [item for item in combined if item.get('id')]
     by_id = {item['id']: item for item in combined}
     ranked = sorted(by_id.values(), key=news_rank, reverse=True)
-    ids = {item['id'] for item in ranked[:MAX_ACTIVE_NEWS]}
+    # Reserveer maximaal 8 plekken voor leesbare media; vul overige plekken
+    # steeds op met de recentste andere nieuwsartikels.
+    media = [item for item in ranked if item.get('category') == 'media'][:8]
+    others = [item for item in ranked if item.get('category') != 'media']
+    selected = media + others[:max(0, MAX_ACTIVE_NEWS - len(media))]
+    if len(selected) < MAX_ACTIVE_NEWS:
+        present = {item['id'] for item in selected}
+        selected.extend(item for item in ranked if item['id'] not in present
+                        and len(selected) < MAX_ACTIVE_NEWS)
+    ids = {item['id'] for item in selected}
     live = [item for item in live if item.get('id') in ids]
     base['items'] = [item for item in base.get('items', []) if item.get('id') in ids]
     print('Nieuwsvoorraad:', len(ids), 'actieve artikels; streefminimum',
@@ -341,6 +398,10 @@ def main():
         raise RuntimeError('baseline ontbreekt; verwijder de gecontroleerde startsignalen niet.')
 
     discovered = discover()
+    media_items = discover_media()
+    # Bestaande bronnen behouden; media-artikels worden apart gecategoriseerd.
+    discovered.extend(media_items)
+    discovered.sort(key=lambda item: item['sort'], reverse=True)
     previous_news_count = len(previous.get('live', [])) + len(base.get('items', []))
     # Bij te weinig resultaten zoeken we verder terug, zonder valse artikelen aan te maken.
     if len({i['id'] for i in discovered}) + previous_news_count < MIN_ACTIVE_NEWS:
