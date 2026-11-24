@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://invest4talent.github.io/i4t-marketing-radar/
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -70,25 +70,7 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: public
-      - name: Wacht tot publicatiebestand zichtbaar is bij GitHub
+      - name: Publiceer GitHub Pages via bevestigd artifact-ID
         env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          # Een upload kan kort na afloop nog niet zichtbaar zijn via de artifact-API.
-          # Probeer opnieuw voordat deploy-pages dit bestand opvraagt.
-          for poging in 1 2 3 4 5 6; do
-            artifact_id=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts" --jq '.artifacts[] | select(.name == "github-pages" and .expired == false) | .id' || true)
-            if [ -n "$artifact_id" ]; then
-              echo "GitHub Pages-artifact beschikbaar via Actions-API: $artifact_id"
-              exit 0
-            fi
-            echo "Publicatiebestand nog niet zichtbaar (poging $poging/6)."
-            sleep 10
-          done
-          echo "::error::Uploadstap afgerond, maar github-pages-artifact blijft onvindbaar. Controleer Actions-artifacts."
-          exit 1
-      - name: Deploy GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
-        with:
-          artifact_name: github-pages
+        run: python scripts/deploy_pages.py
