@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-24T10:05:18Z",
+  "updated_at": "2026-11-24T10:16:01Z",
   "update_mode": "automatische bronontdekking (niet inhoudelijk geverifieerd)",
-  "sources_ok": 7,
+  "sources_ok": 2,
   "baseline": {
     "items": [
       {
@@ -1185,7 +1185,7 @@
     "live-media-df869547342f03be": "2026-11-24T10:05:18Z",
     "live-concurrent-f699e1758eb25": "2026-11-24T10:05:18Z"
   },
-  "new_count": 2,
+  "new_count": 0,
   "content_score_backfill_ran": true,
   "platform_backfill_ran": true
 }
