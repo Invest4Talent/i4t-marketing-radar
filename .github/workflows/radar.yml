@@ -5,7 +5,10 @@ on:
     paths-ignore:
       - 'radar-data.json'
   schedule:
-    - cron: '20 6 * * *'
+    # GitHub kan geplande jobs vertragen of overslaan. Twee onafhankelijke
+    # tijdstippen spreiden het risico; op beide draait dezelfde idempotente flow.
+    - cron: '17 6 * * *'   # 07:17 CET / 08:17 CEST
+    - cron: '43 13 * * *'  # 14:43 CET / 15:43 CEST
   workflow_dispatch:
 permissions:
   contents: write
