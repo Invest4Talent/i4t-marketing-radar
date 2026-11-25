@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T17:46:11Z",
+  "updated_at": "2026-11-25T09:14:11Z",
   "update_mode": "automatische bronontdekking (niet inhoudelijk geverifieerd)",
   "sources_ok": 6,
   "baseline": {
@@ -1064,40 +1064,6 @@
       "content_score_version": 2
     },
     {
-      "id": "live-sector-5b668dd6692e7",
-      "category": "sector",
-      "kind": "Arbeidsmarkt",
-      "date": "27/10/2026",
-      "sort": 20261027,
-      "source": "VDAB",
-      "title": "Succesvolle Job- en Opleidingsbeurs brengt honderden werkzoekenden en werkgevers samen in Oostende",
-      "summary": "Nieuw artikel gevonden bij VDAB. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
-      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNOE1IOVV2ZFpYU3lnaVFJTlA3ZHd2Rm1obHJWcHQteUNFdjE1Y1RFcU44ZTRHRnVkekxyWGhXNDNHbFFSTzgwbzNsaTVESXVIb0FhWnFPS3pNaDZRNWJuQTlmVHpfSnVpNllFZy0xZ3ViT3c2Z0xlUTJnZnkxQTR4QW5rVThfcmtQczlEUmZSaTZKZFBzZ2tYUVIwX2VaRnMyWE93bTZEV3FTVkk?oc=5",
-      "topic": "Succesvolle Job- en Opleidingsbeurs brengt honderden werkzoekenden en werkgevers samen in Oostende",
-      "audience": "kandidaten en werkgevers",
-      "priority": "Te beoordelen",
-      "verification": "Automatisch gevonden · inhoud nog nakijken",
-      "first_seen": "2026-11-09T10:23:11Z",
-      "article_url": "https://www.vdab.be/nieuws-voor-de-pers/west-vlaanderen/succesvolle-job-en-opleidingsbeurs-brengt-honderden",
-      "ai_analysis": {
-        "samenvatting": "Op de vijfde Job- en Opleidingsbeurs in Oostende ontmoetten 964 bezoekers 39 werkgevers. Bezoekers konden vacatures ontdekken, solliciteren en informatie krijgen over opleidingen en begeleiding.",
-        "betekenis": "De beurs omvatte ook productie en bracht werkzoekenden rechtstreeks in contact met werkgevers. Dat maakt de persoonlijke kennismaking een concreet aanknopingspunt voor Go4Jobs in de regio.",
-        "marketingactie": "Maak een socialmediapost voor Oost-Vlaamse werkzoekenden over de beurs: vermeld de 964 bezoekers, 39 werkgevers en de productiesector, en nodig hen uit Go4Jobs te contacteren voor een persoonlijk gesprek.",
-        "kanttekening": "Controleer of Go4Jobs deelnam en of er een volgende editie gepland is; dat staat niet in het artikel."
-      },
-      "ai_version": 2,
-      "ai_status": "geanalyseerd",
-      "content_score": {
-        "score": 57,
-        "motivatie": "De beurs biedt een concrete insteek voor kandidaten: 964 bezoekers ontmoetten 39 werkgevers, ook uit de productie. De actualiteit is onduidelijk en Oostende ligt niet in Oost-Vlaan",
-        "basis": "geanalyseerde brontekst",
-        "platform": "meta",
-        "platformreden": "De cijfers en het persoonlijke contact lenen zich voor een korte, lokale kandidatenpost; maak wel duidelijk dat het om Oostende gaat."
-      },
-      "content_score_version": 2
-    },
-    {
       "id": "live-concurrent-1c1e6c66d000e",
       "category": "concurrent",
       "kind": "Concurrentiecontent",
@@ -1130,6 +1096,51 @@
         "platformreden": "Een herkenbare, korte post over loopbaanstilstand past bij kandidaten op Facebook en Instagram; verwijs alleen naar passende vacatures."
       },
       "content_score_version": 2
+    },
+    {
+      "id": "live-media-4ffd7d68445cb370",
+      "category": "media",
+      "kind": "Algemene media",
+      "date": "24/11/2026",
+      "sort": 20261124,
+      "source": "Made in",
+      "title": "Simonet wil flexi-jobs uitbreiden naar zelfstandigen",
+      "summary": "Publiek leesbaar nieuwsartikel, automatisch geselecteerd op sectorrelevantie.",
+      "impact": "AI-interpretatie volgt na analyse van de oorspronkelijke brontekst.",
+      "url": "https://www.made-in.be/antwerpen/simonet-wil-flexi-jobs-uitbreiden-naar-zelfstandigen/",
+      "article_url": "https://www.made-in.be/antwerpen/simonet-wil-flexi-jobs-uitbreiden-naar-zelfstandigen/",
+      "topic": "Simonet wil flexi-jobs uitbreiden naar zelfstandigen",
+      "audience": "kandidaten en werkgevers",
+      "priority": "Te beoordelen",
+      "verification": "Publiek leesbaar artikel · inhoud nog redactioneel controleren",
+      "public_text_verified": true,
+      "first_seen": "2026-11-25T09:14:11Z",
+      "ai_analysis": {
+        "samenvatting": "Kamerlid Van Quickenborne wil flexi-jobs openstellen voor zelfstandigen; minister Simonet steunt het voorstel. Het maakt geen deel uit van het regeerakkoord en wordt nog besproken bij de begrotingsbesprekingen.",
+        "betekenis": "Een eventuele uitbreiding kan de groep die flexi-jobs mag doen veranderen, maar er is nog geen beslissing. De uitkomst hangt af van de lopende begrotingsbesprekingen.",
+        "marketingactie": "Volg de begrotingsbesprekingen op en informeer klanten pas over mogelijke gevolgen zodra er een beslissing of concreet wetsvoorstel is.",
+        "kanttekening": "Controleer of het voorstel wordt goedgekeurd en wat de definitieve regels en ingangsdatum zijn."
+      },
+      "ai_version": 2,
+      "ai_status": "geanalyseerd",
+      "content_score": {
+        "score": 44,
+        "motivatie": "Flexi-jobs zijn relevant voor werkgevers en kandidaten, maar er is nog geen beslissing of concreet wetsvoorstel. Een inhoudelijke update is daarom nu beperkt bruikbaar.",
+        "basis": "geanalyseerde brontekst",
+        "platform": "geen",
+        "platformreden": "Wacht op een beslissing of concreet wetsvoorstel; pas dan zijn de definitieve regels en gevolgen zinvol toe te lichten."
+      },
+      "content_score_version": 2,
+      "combined_score": 58,
+      "market_interest": {
+        "theme": "flexi-jobs",
+        "score": 100,
+        "avg_monthly_searches": 49500,
+        "keyword": "flexi job",
+        "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
+        "basis": "90% Keyword Planner / 10% Search Console",
+        "market_score": 100
+      }
     }
   ],
   "first_seen_ids": {
@@ -1183,9 +1194,10 @@
     "live-media-54c0daf2c3040f33": "2026-11-23T14:30:05Z",
     "live-media-5d8343c1c781d48c": "2026-11-23T14:38:14Z",
     "live-media-df869547342f03be": "2026-11-24T10:05:18Z",
-    "live-concurrent-f699e1758eb25": "2026-11-24T10:05:18Z"
+    "live-concurrent-f699e1758eb25": "2026-11-24T10:05:18Z",
+    "live-media-4ffd7d68445cb370": "2026-11-25T09:14:11Z"
   },
-  "new_count": 0,
+  "new_count": 1,
   "content_score_backfill_ran": true,
   "platform_backfill_ran": true
 }
