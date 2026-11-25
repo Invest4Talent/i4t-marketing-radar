@@ -10,6 +10,12 @@ on:
     - cron: '17 6 * * *'   # 07:17 CET / 08:17 CEST
     - cron: '43 13 * * *'  # 14:43 CET / 15:43 CEST
   workflow_dispatch:
+    inputs:
+      prepare_branch:
+        description: 'Eenmalig de gh-pages-branch voorbereiden zonder de huidige Pages-publicatie te wijzigen'
+        required: false
+        type: boolean
+        default: false
 permissions:
   contents: write
   actions: read
@@ -68,12 +74,36 @@ jobs:
           mkdir -p public
           cp index.html radar-data.json public/
           touch public/.nojekyll
+      # De bestaande artifact-publicatie blijft actief tot de overstap
+      # expliciet via de repositoryvariabele RADAR_PAGES_MODE is ingeschakeld.
       - uses: actions/configure-pages@v5
+        if: ${{ vars.RADAR_PAGES_MODE != 'branch' && inputs.prepare_branch != true }}
       - name: Upload GitHub Pages artifact
+        if: ${{ vars.RADAR_PAGES_MODE != 'branch' && inputs.prepare_branch != true }}
         uses: actions/upload-pages-artifact@v5
         with:
           path: public
       - name: Publiceer GitHub Pages via bevestigd artifact-ID
+        if: ${{ vars.RADAR_PAGES_MODE != 'branch' && inputs.prepare_branch != true }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: python scripts/deploy_pages.py
+      # Gebruik bewust geen GITHUB_TOKEN: GitHub Pages bouwt geen site na
+      # een branch-push die met het ingebouwde GITHUB_TOKEN is gedaan.
+      - name: Controleer apart publicatietoken voor gh-pages
+        if: ${{ vars.RADAR_PAGES_MODE == 'branch' || inputs.prepare_branch == true }}
+        env:
+          PAGES_PUBLISH_TOKEN: ${{ secrets.PAGES_PUBLISH_TOKEN }}
+        run: |
+          if [ -z "$PAGES_PUBLISH_TOKEN" ]; then
+            echo "::error::Repository-secret PAGES_PUBLISH_TOKEN ontbreekt. Stel een beperkt token in vóór branch-publicatie."
+            exit 1
+          fi
+      - name: Schrijf website naar gh-pages-branch
+        if: ${{ vars.RADAR_PAGES_MODE == 'branch' || inputs.prepare_branch == true }}
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.PAGES_PUBLISH_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          enable_jekyll: false
