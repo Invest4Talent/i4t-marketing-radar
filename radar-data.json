@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T09:14:11Z",
+  "updated_at": "2026-11-25T09:23:32Z",
   "update_mode": "automatische bronontdekking (niet inhoudelijk geverifieerd)",
   "sources_ok": 6,
   "baseline": {
@@ -1064,40 +1064,6 @@
       "content_score_version": 2
     },
     {
-      "id": "live-concurrent-1c1e6c66d000e",
-      "category": "concurrent",
-      "kind": "Concurrentiecontent",
-      "date": "27/10/2026",
-      "sort": 20261027,
-      "source": "Randstad",
-      "title": "Tijd om een nieuwe job te zoeken: 6 signalen",
-      "summary": "Nieuw artikel gevonden bij Randstad. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
-      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBxNlR4WkEwMk1FNHA0cFdNNEZkTjNtZGlpQ2dqMHZTakNGLUVodTA0M1lQOXQxOTRsdnctMUJOVkYzTmVNSjFaenRjX1ZQNEIzLWtlMzU5WTFwX2x0ZUFSY3JsNTMwRTA0M1BEaVlnQVVTdUxPNTFGemx3?oc=5",
-      "topic": "Tijd om een nieuwe job te zoeken: 6 signalen",
-      "audience": "kandidaten en werkgevers",
-      "priority": "Te beoordelen",
-      "verification": "Automatisch gevonden · inhoud nog nakijken",
-      "first_seen": "2026-11-12T07:33:46Z",
-      "article_url": "https://www.randstad.be/carriere/carrieretips/het-tijd-een-nieuwe-job/",
-      "ai_analysis": {
-        "samenvatting": "Het artikel noemt zes signalen om een nieuwe job te overwegen, zoals aanhoudende verveling, gebrek aan waardering en weinig doorgroeimogelijkheden. Bij verveling die 6-12 maanden aanhoudt, raadt het eerst een gesprek met de manager aan.",
-        "betekenis": "Go4Jobs kan inspelen op de behoefte aan nieuwe uitdagingen: volgens het artikel kan gebrek aan nieuwe vaardigheden in de voorbije 12 maanden een teken zijn dat iemand stilstaat in zijn loopbaan.",
-        "marketingactie": "Maak een social post over het signaal ‘de voorbije 12 maanden niets nieuws bijgeleerd’ en nodig geïnteresseerden uit om passende Go4Jobs-vacatures te bekijken.",
-        "kanttekening": "Controleer vóór publicatie of er passende vacatures zijn en vermijd de indruk dat gebrek aan nieuwe vaardigheden op zichzelf een reden is om meteen te vertrekken."
-      },
-      "ai_version": 2,
-      "ai_status": "geanalyseerd",
-      "content_score": {
-        "score": 74,
-        "motivatie": "Herkenbaar en relevant voor kandidaten, met een concreet signaal als social invalshoek. Het artikel is wel algemeen en vooral evergreen; controleer vacatures en nuanceer dat dit si",
-        "basis": "geanalyseerde brontekst",
-        "platform": "meta",
-        "platformreden": "Een herkenbare, korte post over loopbaanstilstand past bij kandidaten op Facebook en Instagram; verwijs alleen naar passende vacatures."
-      },
-      "content_score_version": 2
-    },
-    {
       "id": "live-media-4ffd7d68445cb370",
       "category": "media",
       "kind": "Algemene media",
@@ -1140,6 +1106,50 @@
         "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
         "basis": "90% Keyword Planner / 10% Search Console",
         "market_score": 100
+      }
+    },
+    {
+      "id": "live-sector-2aa68eb68cbdb",
+      "category": "sector",
+      "kind": "Werk & economie",
+      "date": "12/11/2026",
+      "sort": 20261112,
+      "source": "Statbel",
+      "title": "Totale productie in de marktgeoriënteerde sectoren - augustus 2026 - Statbel",
+      "summary": "Nieuw artikel gevonden bij Statbel. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
+      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPcFlsU2t1SjZCdWhtd1d2empXcGVwR1c1RFE2RmpPVmZZdnVDdEhtSzRtZkQ3U0ZvS3lxSXphQzM1V2tMTWpnUy1tN1JnOGlGbkMtSVdxVTF6cmRlZjh2ZC1UTWZXcWItNTJkMXVWQkJReksyN3VDckZNZnhzcXU3dVdGNnE5bXhDNkxJdEZOT0lJVk1WVU1DVnZhcw?oc=5",
+      "topic": "Totale productie in de marktgeoriënteerde sectoren - augustus 2026 - Statbel",
+      "audience": "werkgevers en kandidaten",
+      "priority": "Te beoordelen",
+      "verification": "Automatisch gevonden · inhoud nog nakijken",
+      "first_seen": "2026-11-25T09:23:32Z",
+      "article_url": "https://statbel.fgov.be/nl/nieuws/totale-productie-de-marktgeorienteerde-sectoren-augustus-2026",
+      "ai_analysis": {
+        "samenvatting": "De totale productie steeg in augustus 2026 met 0,6% tegenover een jaar eerder. De industrie daalde 7,1% op jaarbasis en 5,1% tegenover juli; de cijfers zijn voorlopig.",
+        "betekenis": "De daling in de industrie kan aanleiding zijn om bij productieklanten hun personeelsbehoefte te toetsen. Productiecijfers tonen op zich niet aan hoe de vraag naar personeel evolueert.",
+        "marketingactie": "Neem contact op met enkele productieklanten en vraag hoe de industriële productiedaling van 7,1% hun personeelsplanning beïnvloedt.",
+        "kanttekening": "De cijfers voor juli en augustus zijn voorlopig; controleer ze bij Statbel zodra definitieve resultaten beschikbaar zijn."
+      },
+      "ai_version": 2,
+      "ai_status": "geanalyseerd",
+      "content_score": {
+        "score": 62,
+        "motivatie": "De industriële productiedaling is relevant voor productiebedrijven, maar zegt op zichzelf niets over personeelsvraag. Voorlopige cijfers vragen om nuance; de concrete invalshoek is",
+        "basis": "geanalyseerde brontekst",
+        "platform": "linkedin",
+        "platformreden": "De cijfers bieden een genuanceerde aanleiding voor een werkgeversgerichte vraag over productie en personeelsplanning."
+      },
+      "content_score_version": 2,
+      "combined_score": 59,
+      "market_interest": {
+        "theme": "productiejobs",
+        "score": 50,
+        "avg_monthly_searches": 880,
+        "keyword": "productiemedewerker",
+        "scope": "Vlaanderen, Nederlands, Google, nov 2025–okt 2026",
+        "basis": "90% Keyword Planner / 10% Search Console",
+        "market_score": 48
       }
     }
   ],
@@ -1195,7 +1205,8 @@
     "live-media-5d8343c1c781d48c": "2026-11-23T14:38:14Z",
     "live-media-df869547342f03be": "2026-11-24T10:05:18Z",
     "live-concurrent-f699e1758eb25": "2026-11-24T10:05:18Z",
-    "live-media-4ffd7d68445cb370": "2026-11-25T09:14:11Z"
+    "live-media-4ffd7d68445cb370": "2026-11-25T09:14:11Z",
+    "live-sector-2aa68eb68cbdb": "2026-11-25T09:23:32Z"
   },
   "new_count": 1,
   "content_score_backfill_ran": true,
