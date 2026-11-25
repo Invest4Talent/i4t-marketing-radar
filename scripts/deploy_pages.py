@@ -29,23 +29,41 @@ def api(method, url, token, payload=None):
     return response.json()
 
 
-def find_artifact(api_root, repository, run_id, token):
+def find_artifact(api_root, repository, run_id, token, attempts=9, delay=10):
+    """Wacht op uiteindelijke zichtbaarheid van het artifact in de REST API.
+
+    De uploadactie kan succesvol eindigen vóór de artifactlijst van GitHub
+    de nieuwe upload teruggeeft. Maximaal 80 seconden bijkomende wachttijd.
+    """
     endpoint = f"{api_root}/repos/{repository}/actions/runs/{run_id}/artifacts"
-    response = api("GET", endpoint, token)
-    matches = [
-        art for art in response.get("artifacts", [])
-        if art.get("name") == "github-pages"
-        and not art.get("expired", False)
-    ]
-    if len(matches) != 1:
-        raise RuntimeError(
-            f"Verwacht exact één 'github-pages'-artifact in run {run_id}, "
-            f"maar vond er {len(matches)}."
-        )
-    artifact = matches[0]
-    if artifact.get("workflow_run", {}).get("id", run_id) != int(run_id):
-        raise RuntimeError("Artifact hoort niet bij de huidige workflowrun.")
-    return int(artifact["id"])
+    for attempt in range(1, attempts + 1):
+        response = api("GET", endpoint, token)
+        matches = [
+            art for art in response.get("artifacts", [])
+            if art.get("name") == "github-pages"
+            and not art.get("expired", False)
+        ]
+        if len(matches) > 1:
+            raise RuntimeError(
+                f"Meer dan één 'github-pages'-artifact in run {run_id}; "
+                "publicatie afgebroken om verwarring te voorkomen."
+            )
+        if len(matches) == 1:
+            artifact = matches[0]
+            if artifact.get("workflow_run", {}).get("id", run_id) != int(run_id):
+                raise RuntimeError("Artifact hoort niet bij de huidige workflowrun.")
+            return int(artifact["id"])
+        if attempt < attempts:
+            print(
+                f"Artifact nog niet zichtbaar via GitHub REST API "
+                f"(poging {attempt}/{attempts}); nieuwe controle over {delay}s.",
+                flush=True,
+            )
+            time.sleep(delay)
+    raise RuntimeError(
+        f"Geen 'github-pages'-artifact voor run {run_id} na "
+        f"{attempts} controles. Controleer het uploadresultaat."
+    )
 
 
 def get_oidc():
