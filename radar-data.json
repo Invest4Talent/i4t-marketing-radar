@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-25T22:44:01Z",
+  "updated_at": "2026-11-26T16:51:25Z",
   "update_mode": "automatische bronontdekking (niet inhoudelijk geverifieerd)",
-  "sources_ok": 6,
+  "sources_ok": 5,
   "baseline": {
     "items": [
       {
@@ -202,40 +202,6 @@
         "basis": "geanalyseerde brontekst",
         "platform": "meta",
         "platformreden": "Een visuele post met geverifieerde vacatures en startdata spreekt kandidaten aan die snel werk zoeken."
-      }
-    },
-    {
-      "id": "live-concurrent-d481cad09d00e",
-      "category": "concurrent",
-      "kind": "Concurrentiecontent",
-      "date": "29/10/2026",
-      "sort": 20261029,
-      "source": "Randstad",
-      "title": "86% van de werkgevers wereldwijd breiden hun IT-team uit.",
-      "summary": "Nieuw artikel gevonden bij Randstad. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
-      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYUxPM3pFZWpSbzhOZmY0eUJEdFMybGJPanJvTFQwS203cFpZdDRyVmpQcWRNWFk0Z0pRM0NvejJXa0NZcDlRWU5jdW1FUGdKWmUwUUtoWXdZaWZodlAtMVRRMS0wQ1oxWFB5Z0VoTmlWR0RHeDFvem9YZ3k0MC02dE81NnVlUVBWLUNJTlh3?oc=5",
-      "topic": "86% van de werkgevers wereldwijd breiden hun IT-team uit.",
-      "audience": "kandidaten en werkgevers",
-      "priority": "Te beoordelen",
-      "verification": "Automatisch gevonden · inhoud nog nakijken",
-      "first_seen": "2026-11-09T10:23:11Z",
-      "ai_analysis": {
-        "samenvatting": "Volgens een internationale Randstad-studie breidt 86% van de werkgevers hun IT-team uit. De vraag naar AI-vaardigheden is in een jaar meer dan vervijfvoudigd; 63% zet flexibel talent in om tekorten op te vangen.",
-        "betekenis": "De cijfers gaan over IT- en AI-talent wereldwijd. Ze tonen geen directe vraag of beleidswijziging bij Vlaamse productiebedrijven, logistieke werkgevers of kmo’s aan.",
-        "marketingactie": "Geen directe Go4Jobs-actie: het artikel biedt onvoldoende concrete aanknopingspunten voor de focus op productie, logistiek en lokale kmo’s.",
-        "kanttekening": "Controleer de oorspronkelijke studie en of de bevindingen ook gelden voor Vlaamse werkgevers buiten de IT-sector."
-      },
-      "article_url": "https://www.randstad.be/over-ons/nieuws/86-werkgevers-wereldwijd-breiden-hun-it-team/",
-      "ai_version": 2,
-      "ai_status": "geanalyseerd",
-      "content_score_version": 2,
-      "content_score": {
-        "score": 15,
-        "motivatie": "De cijfers gaan over IT- en AI-talent wereldwijd en bieden weinig bruikbare aanknopingspunten voor Vlaamse kandidaten, productie, logistiek of lokale kmo’s.",
-        "basis": "geanalyseerde brontekst",
-        "platform": "geen",
-        "platformreden": "Zonder bewijs dat de trends ook Vlaamse werkgevers buiten IT raken, levert eigen Go4Jobs-content weinig relevante waarde op."
       }
     },
     {
@@ -1151,6 +1117,40 @@
         "basis": "90% Keyword Planner / 10% Search Console",
         "market_score": 48
       }
+    },
+    {
+      "id": "live-sector-0097bdc3e7b60",
+      "category": "sector",
+      "kind": "Arbeidsmarkt",
+      "date": "20/11/2026",
+      "sort": 20261120,
+      "source": "VDAB",
+      "title": "Geslaagde jobbeurs brengt meer dan 400 werkzoekenden en 30 werkgevers samen",
+      "summary": "Nieuw artikel gevonden bij VDAB. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
+      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaUlTVUUtT1N5VjJ0UlVMV0tFMmFhVnFjdHZHZDlaWWdMeWozNXcwOXFhUTJHTlZydTNZcHNjRmlJWUNheTVEaG1wMVZNSVRrMTMtUzFHLUxSOHFpSzNRMElyMktTQXI4bHNvU1kzck83RDB6TTB1UW1XMjQ2NkpwdlZHQXBTR3ZnamthOW0yd1g4UTRzM0diODZNbjRzaEpTSmdNZmxNcDEyQlpyNWU0U0xxRQ?oc=5",
+      "topic": "Geslaagde jobbeurs brengt meer dan 400 werkzoekenden en 30 werkgevers samen",
+      "audience": "kandidaten en werkgevers",
+      "priority": "Te beoordelen",
+      "verification": "Automatisch gevonden · inhoud nog nakijken",
+      "first_seen": "2026-11-26T16:51:25Z",
+      "article_url": "https://www.vdab.be/nieuws-voor-de-pers/vlaams-brabant/geslaagde-jobbeurs-brengt-meer-dan-400-werkzoekenden-en-30",
+      "ai_analysis": {
+        "samenvatting": "De jobbeurs in Malderen bracht 431 bezoekers en meer dan 30 werkgevers samen. In logistiek en transport zochten onder meer Colruyt Group, Distrilog en NV Gebr. Hermans magazijniers, heftruckchauffeurs en vrachtwagenchauffeurs.",
+        "betekenis": "De directe gesprekken op de beurs koppelden werkzoekenden aan concrete logistieke vacatures. Dat biedt Go4Jobs een aanknopingspunt om lokale werkgevers met vraag naar magazijn- en transportprofielen te benaderen.",
+        "marketingactie": "Benader Colruyt Group, Distrilog en NV Gebr. Hermans met een concreet voorstel om kandidaten voor magazijn- en transportvacatures aan te leveren.",
+        "kanttekening": "Controleer de actualiteit van de vacatures en de artikeldata: de tekst noemt september 2026, maar vermeldt geen publicatiedatum of jaartal bij de beurs."
+      },
+      "ai_version": 2,
+      "ai_status": "geanalyseerd",
+      "content_score": {
+        "score": 66,
+        "motivatie": "Sterke lokale match met logistieke profielen en concrete werkgevers, maar de onduidelijke beursdatum maakt actualiteit onzeker. Een eigen invalshoek is mogelijk, al zijn actuele va",
+        "basis": "geanalyseerde brontekst",
+        "platform": "linkedin",
+        "platformreden": "De lokale vraag naar magazijn- en transportprofielen biedt een concrete insteek voor werkgevers en HR."
+      },
+      "content_score_version": 2
     }
   ],
   "first_seen_ids": {
@@ -1206,9 +1206,10 @@
     "live-media-df869547342f03be": "2026-11-24T10:05:18Z",
     "live-concurrent-f699e1758eb25": "2026-11-24T10:05:18Z",
     "live-media-4ffd7d68445cb370": "2026-11-25T09:14:11Z",
-    "live-sector-2aa68eb68cbdb": "2026-11-25T09:23:32Z"
+    "live-sector-2aa68eb68cbdb": "2026-11-25T09:23:32Z",
+    "live-sector-0097bdc3e7b60": "2026-11-26T16:51:25Z"
   },
-  "new_count": 0,
+  "new_count": 1,
   "content_score_backfill_ran": true,
   "platform_backfill_ran": true
 }
