@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T22:34:35Z",
+  "updated_at": "2026-11-27T16:37:52Z",
   "update_mode": "automatische bronontdekking (niet inhoudelijk geverifieerd)",
   "sources_ok": 5,
   "baseline": {
@@ -1149,6 +1149,40 @@
         "basis": "geanalyseerde brontekst",
         "platform": "linkedin",
         "platformreden": "De lokale vraag naar magazijn- en transportprofielen biedt een concrete insteek voor werkgevers en HR."
+      },
+      "content_score_version": 2
+    },
+    {
+      "id": "live-concurrent-d481cad09d00e",
+      "category": "concurrent",
+      "kind": "Concurrentiecontent",
+      "date": "29/10/2026",
+      "sort": 20261029,
+      "source": "Randstad",
+      "title": "86% van de werkgevers wereldwijd breiden hun IT-team uit.",
+      "summary": "Nieuw artikel gevonden bij Randstad. De inhoud is nog niet redactioneel gecontroleerd; open de bron voor details.",
+      "impact": "Inhoudelijke analyse volgt zodra de bron toegankelijk is.",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYUxPM3pFZWpSbzhOZmY0eUJEdFMybGJPanJvTFQwS203cFpZdDRyVmpQcWRNWFk0Z0pRM0NvejJXa0NZcDlRWU5jdW1FUGdKWmUwUUtoWXdZaWZodlAtMVRRMS0wQ1oxWFB5Z0VoTmlWR0RHeDFvem9YZ3k0MC02dE81NnVlUVBWLUNJTlh3?oc=5",
+      "topic": "86% van de werkgevers wereldwijd breiden hun IT-team uit.",
+      "audience": "kandidaten en werkgevers",
+      "priority": "Te beoordelen",
+      "verification": "Automatisch gevonden · inhoud nog nakijken",
+      "first_seen": "2026-11-09T10:23:11Z",
+      "article_url": "https://www.randstad.be/over-ons/nieuws/86-werkgevers-wereldwijd-breiden-hun-it-team/",
+      "ai_analysis": {
+        "samenvatting": "Volgens de internationale Randstad-studie breidt 86% van de werkgevers hun IT-team uit; de vraag naar vacatures met AI-skills is op één jaar tijd meer dan vervijfvoudigd. 63% zet flexibel talent in om tekorten aan AI-vaardigheden op te vangen.",
+        "betekenis": "De cijfers gaan over IT- en AI-talent wereldwijd. De tekst toont niet aan dat deze trends gelden voor Go4Jobs’ Vlaamse kmo-klanten in productie en logistiek.",
+        "marketingactie": "Geen directe actie: het artikel biedt geen concreet aanknopingspunt voor de productie-, logistieke of lokale kmo-doelgroep van Go4Jobs.",
+        "kanttekening": "Controleer de studie, haar steekproef en de toepasbaarheid op Vlaamse kmo’s; die informatie staat niet in de artikeltekst."
+      },
+      "ai_version": 2,
+      "ai_status": "geanalyseerd",
+      "content_score": {
+        "score": 18,
+        "motivatie": "De cijfers over wereldwijde IT- en AI-werving sluiten beperkt aan bij Vlaamse kandidaten, productie, logistiek en lokale kmo’s. Zonder lokale toepasbaarheid is er weinig onderschei",
+        "basis": "geanalyseerde brontekst",
+        "platform": "geen",
+        "platformreden": "De tekst biedt geen concrete, onderbouwde invalshoek voor Go4Jobs’ Vlaamse doelgroep."
       },
       "content_score_version": 2
     }
